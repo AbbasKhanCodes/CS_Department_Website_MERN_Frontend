@@ -238,6 +238,7 @@ h6,
 .panel_body {
   font-size: 18px;
   padding: 25px;
+  font-weight: 100;
 }
 
 .media_list {
@@ -253,9 +254,13 @@ ol {
   box-sizing: border-box;
 }
 .media_list_links .media {
-  font-weight: bold;
   line-height: 1.2;
 }
+
+.media_list_links .media a {
+  font-weight: 500;
+}
+
 .media:first-child {
   margin-top: 0;
 }

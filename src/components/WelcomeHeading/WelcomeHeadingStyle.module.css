@@ -1,0 +1,14 @@
+.welcomeWrapper {
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.welcomeWrapper h2 {
+  font-weight: 600;
+}
+
+.welcomeWrapper span {
+  color: #68a4c4;
+}

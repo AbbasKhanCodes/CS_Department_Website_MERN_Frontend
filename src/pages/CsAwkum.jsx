@@ -1,4 +1,5 @@
 import TopSlider from "./TopSlider";
+import WelcomeHeading from "../components/WelcomeHeading/WelcomeHeading";
 import NewsAndEvents from "../components/NewsAndEvents";
 import FacultySlider from "../components/FacultySlider/FacultySlider";
 import CardsSlider from "../components/CardSlider/CardsSlider";
@@ -11,6 +12,9 @@ function CsAwkum() {
 
       {/* Top Slider */}
       <TopSlider />
+
+      {/* Welcome Heading  */}
+      <WelcomeHeading />
 
       {/* News & Events */}
       <NewsAndEvents />
