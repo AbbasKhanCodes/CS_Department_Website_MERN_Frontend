@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import axios, { toFormData } from "axios";
 import { useNavigate } from "react-router-dom";
 
 import DatePicker from "react-datepicker";
@@ -21,17 +21,9 @@ function Admin() {
 
   // Add news function
   const addNews = async () => {
-    try {
-      const resp = await axios.post(
-        "https://cs-department-website-mern-backend.vercel.app/addnews",
-        {
-          news,
-          date: new Date(),
-        }
-      );
-
-      // Clearing value of news variable
-      toast.success("News is successfully added.", {
+    if (!news) {
+      // If user didn't write news then show warning
+      toast.error("News box is empty !!!", {
         position: "top-left",
         autoClose: 2000,
         hideProgressBar: false,
@@ -41,28 +33,43 @@ function Admin() {
         progress: undefined,
         theme: "light",
       });
+    } else {
+      // If User writes News then upload it
+      try {
+        const resp = await axios.post(
+          "https://cs-department-website-mern-backend.vercel.app/addnews",
+          {
+            news,
+            date: new Date(),
+          }
+        );
 
-      setNews("");
-      setClickedEvent(false);
-      setClickedNews(false);
-    } catch (error) {
-      console.log("Error in Uploading News " + error);
+        // Clearing value of news variable
+        toast.success("News is successfully added.", {
+          position: "top-left",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+
+        setNews("");
+        setClickedEvent(false);
+        setClickedNews(false);
+      } catch (error) {
+        console.log("Error in Uploading News " + error);
+      }
     }
   };
 
   // Add event function
   const addEvent = async () => {
-    try {
-      const resp = await axios.post(
-        "https://cs-department-website-mern-backend.vercel.app/addevent",
-        {
-          event,
-          date: selectedDate,
-        }
-      );
-
-      // Clearing value of event * date variable
-      toast.success("Event is successfully added.", {
+    if (!event) {
+      // If user didn't write event then show warning
+      toast.error("Event box is empty !!!", {
         position: "top-left",
         autoClose: 2000,
         hideProgressBar: false,
@@ -72,12 +79,47 @@ function Admin() {
         progress: undefined,
         theme: "light",
       });
-      setEvent("");
-      setSelectedDate("");
-      setClickedEvent(false);
-      setClickedNews(false);
-    } catch (error) {
-      console.log("Error in Uploading an Event " + error);
+    } else if (!selectedDate) {
+      // If user didn't write date then show warning
+      toast.error("Event Date is not selected !!!", {
+        position: "top-left",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    } else {
+      // If User writes Events then upload it
+      try {
+        const resp = await axios.post(
+          "https://cs-department-website-mern-backend.vercel.app/addevent",
+          {
+            event,
+            date: selectedDate,
+          }
+        );
+
+        // Clearing value of event * date variable
+        toast.success("Event is successfully added.", {
+          position: "top-left",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+        setEvent("");
+        setSelectedDate("");
+        setClickedEvent(false);
+        setClickedNews(false);
+      } catch (error) {
+        console.log("Error in Uploading an Event " + error);
+      }
     }
   };
 
@@ -156,6 +198,7 @@ function Admin() {
               id="newsInputText"
               cols="30"
               rows="8"
+              required
             ></textarea>
 
             <br />
@@ -209,6 +252,7 @@ function Admin() {
                   placeholderText="Select Date"
                   timeIntervals={15}
                   dateFormat="d-M-y , p"
+                  required
                 />
               </div>
               <div>
@@ -225,6 +269,7 @@ function Admin() {
                 id="newsInputText"
                 cols="40"
                 rows="8"
+                required
               ></textarea>
 
               <div className={Styles.EventAndBackBtns}>
