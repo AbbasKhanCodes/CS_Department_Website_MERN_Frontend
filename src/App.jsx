@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Admin from "./pages/Admin";
 import CsAwkum from "./pages/CsAwkum";
 import Login from "./pages/login";
+import NotFound from "./pages/NotFound";
 
 import "./bootstrapStyle.css";
 
@@ -46,7 +47,7 @@ function App() {
                 <Route path="/csawkum" element={<CsAwkum />} />
 
                 {/* Not Found  */}
-                {/* <Route path="/*" element={<NotFound />} /> */}
+                <Route path="/*" element={<NotFound />} />
               </Routes>
             </div>
           </div>
