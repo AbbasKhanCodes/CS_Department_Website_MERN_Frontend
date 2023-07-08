@@ -16,7 +16,7 @@ function CsAwkum() {
       <NewsAndEvents />
 
       {/* Faculty */}
-      <FacultySlider />
+      {/* <FacultySlider /> */}
     </>
   );
 }
