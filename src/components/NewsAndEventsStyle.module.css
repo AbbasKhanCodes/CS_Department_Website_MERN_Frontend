@@ -1,0 +1,425 @@
+/* CSAWKUM Department page */
+
+.visually_hidden {
+  display: none;
+}
+.container_fluid:before,
+.container_fluid:after {
+  content: " ";
+  display: table;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.col_xs_12 {
+  width: 100%;
+}
+.col_xs_1,
+.col_xs_2,
+.col_xs_3,
+.col_xs_4,
+.col_xs_5,
+.col_xs_6,
+.col_xs_7,
+.col_xs_8,
+.col_xs_9,
+.col_xs_10,
+.col_xs_11,
+.col_xs_12 {
+  float: left;
+}
+.col_xs_1,
+.col_sm_1,
+.col_md_1,
+.col_lg_1,
+.col_xs_2,
+.col_sm_2,
+.col_md_2,
+.col_lg_2,
+.col_xs_3,
+.col_sm_3,
+.col_md_3,
+.col_lg_3,
+.col_xs_4,
+.col_sm_4,
+.col_md_4,
+.col_lg_4,
+.col_xs_5,
+.col_sm_5,
+.col_md_5,
+.col_lg_5,
+.col_xs_6,
+.col_sm_6,
+.col_md_6,
+.col_lg_6,
+.col_xs_7,
+.col_sm_7,
+.col_md_7,
+.col_lg_7,
+.col_xs_8,
+.col_sm_8,
+.col_md_8,
+.col_lg_8,
+.col_xs_9,
+.col_sm_9,
+.col_md_9,
+.col_lg_9,
+.col_xs_10,
+.col_sm_10,
+.col_md_10,
+.col_lg_10,
+.col_xs_11,
+.col_sm_11,
+.col_md_11,
+.col_lg_11,
+.col_xs_12,
+.col_sm_12,
+.col_md_12,
+.col_lg_12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.no_margin {
+  margin: 0 !important;
+}
+.panel_dark_brown_heading {
+  background-color: transparent;
+}
+.panel {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.panel {
+  margin-bottom: 22px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.panel_dark_brown_heading > .panel_heading {
+  color: #fff;
+  background-color: #a19c96;
+}
+.panel_heading {
+  border: none;
+  border-radius: 0;
+}
+.panel_heading {
+  padding: 16px 25px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.panel_heading .btn {
+  padding: 4px 20px;
+}
+.btn_white_outline_on_dark_brown {
+  color: #fff;
+  background-color: #a19c96;
+  border-color: #fff;
+}
+.btn {
+  border-width: 2px;
+  font-weight: bold;
+  padding: 5px 11px;
+}
+.pull_right {
+  float: right;
+}
+.pull_right {
+  float: right !important;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.text_uppercase,
+.initialism {
+  text-transform: uppercase;
+}
+a {
+  font-weight: bold;
+}
+a {
+  color: #4270a9;
+  text-decoration: none;
+}
+
+.space_below {
+  margin-bottom: 20px;
+}
+.content_width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container_fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.panel_heading .panel_title {
+  font-size: 25px;
+}
+.panel_title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: inherit;
+}
+.text_uppercase,
+.initialism {
+  text-transform: uppercase;
+}
+h2,
+.h2 {
+  font-size: 34px;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 22px;
+  margin-bottom: 11px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 1.1;
+  color: inherit;
+}
+.panel_body {
+  font-size: 18px;
+  padding: 25px;
+}
+
+.media_list {
+  padding-left: 0;
+  list-style: none;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+* {
+  box-sizing: border-box;
+}
+.media_list_links .media {
+  font-weight: bold;
+  line-height: 1.2;
+}
+.media:first-child {
+  margin-top: 0;
+}
+.media,
+.media_body {
+  zoom: 1;
+  overflow: hidden;
+}
+.media {
+  margin-top: 15px;
+}
+* {
+  box-sizing: border-box;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.media_left,
+.media_right,
+.media_body {
+  display: table-cell;
+  vertical-align: top;
+}
+.media_left,
+.media > .pull_left {
+  padding-right: 10px;
+}
+
+.media_list_links .media_body {
+  height: 42px;
+  vertical-align: middle;
+}
+
+.media_left,
+.media_right,
+.media_body {
+  display: table-cell;
+  vertical-align: top;
+}
+.media_body {
+  width: 10000px;
+}
+.media,
+.media_body {
+  zoom: 1;
+  overflow: hidden;
+}
+
+.media_list_links .media a {
+  color: #4270a9;
+}
+
+.media_list_links a.date_icon {
+  color: white;
+}
+
+.media_list_links .date_icon {
+  min-height: 42px;
+}
+.date_icon {
+  background: #002147;
+  color: white;
+  display: block;
+  font-weight: normal;
+  margin-right: 15px;
+  padding: 3px 0;
+  text-align: center;
+  width: 44px;
+}
+a {
+  font-weight: bold;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+
+.date_icon .day {
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.date_icon .month {
+  display: block;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+a:hover,
+a:focus {
+  color: #2d4c72;
+  text-decoration: underline;
+}
+
+a.date_icon:hover,
+a.date_icon:focus {
+  background: #4270a9;
+  color: white !important;
+  text-decoration: none;
+}
+
+.panel_body ul {
+  height: 350px;
+  overflow: auto;
+}
+
+.NewsAndEventsContainer {
+  margin-top: 30px;
+}
+
+@media (min-width: 950px) {
+  .space_below {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 700px) {
+  .space_below {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 950px) {
+  .col_md_6 {
+    width: 50%;
+  }
+}
+@media (min-width: 950px) {
+  .col_md_1,
+  .col_md_2,
+  .col_md_3,
+  .col_md_4,
+  .col_md_5,
+  .col_md_6,
+  .col_md_7,
+  .col_md_8,
+  .col_md_9,
+  .col_md_10,
+  .col_md_11,
+  .col_md_12 {
+    float: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel_fade .carousel_inner .carousel_item img {
+    object-fit: contain;
+
+    height: fit-content;
+  }
+}
