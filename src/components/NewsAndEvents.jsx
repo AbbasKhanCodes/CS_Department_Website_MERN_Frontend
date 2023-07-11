@@ -24,11 +24,6 @@ function NewsAndEvents() {
     }
   };
 
-  let obj = { some: 6 };
-
-  useEffect(() => {
-    getAllData();
-  }, []);
   return (
     <>
       <div
