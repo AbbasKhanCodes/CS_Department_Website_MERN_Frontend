@@ -1,0 +1,21 @@
+.chairmanMessageContainer {
+  margin: 1rem;
+  padding: 1rem 2rem;
+
+  border: 2px solid rgb(211, 203, 203);
+  border-radius: 1%;
+}
+.chairmanImg {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+p.chairmanMessage {
+  text-align: justify;
+}
+
+.chairmanName {
+  color: #ad6314;
+}
