@@ -2,7 +2,7 @@ import TopSlider from "./TopSlider";
 import WelcomeHeading from "../components/WelcomeHeading/WelcomeHeading";
 import NewsAndEvents from "../components/NewsAndEvents/NewsAndEvents";
 import ChairmanMessage from "../components/ChairmanMessage/ChairmanMessage";
-import FacultySlider from "../components/FacultySlider/FacultySlider";
+import Faculty from "../components/Faculty/Faculty";
 import CardsSlider from "../components/CardSlider/CardsSlider";
 
 function CsAwkum() {
@@ -24,7 +24,7 @@ function CsAwkum() {
       <ChairmanMessage />
 
       {/* Faculty */}
-      {/* <FacultySlider /> */}
+      <Faculty />
     </>
   );
 }

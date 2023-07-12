@@ -1,0 +1,11 @@
+.facultyCard {
+  width: 100%;
+  height: 200px;
+  background-color: #333;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  margin: 0 20px;
+  justify-content: center;
+  align-items: center;
+}
