@@ -24,11 +24,11 @@ function NewsAndEvents() {
     }
   };
 
-  let obj = { some: 6 };
-
+  // Getting data from backend once the page loads
   useEffect(() => {
     getAllData();
   }, []);
+
   return (
     <>
       <div
