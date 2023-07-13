@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation, Keyboard } from "swiper/modules";
+import { Autoplay, Pagination, Navigation, Keyboard } from "swiper/modules";
 
 const facultyProfiles = [
   {
@@ -30,7 +30,7 @@ const facultyProfiles = [
   {
     url: "MAQSOODHAYAT.jpg",
     name: "Dr. MAQSOOD HAYAT",
-    designation: "Associate Professor",
+    designation: "  Professor",
     education: "Ph.D.",
     email: "m.hayat@awkum.edu.pk",
   },
@@ -73,7 +73,7 @@ const facultyProfiles = [
   {
     url: "HASHIMALI.jpg",
     name: "Mr. HASHIM ALI",
-    designation: "Associate Professor",
+    designation: "Assistant Professor",
     education: "Ph.D.",
     email: "hashimali@awkum.edu.pk",
   },
@@ -93,35 +93,35 @@ const facultyProfiles = [
     email: "aftab.ahmed.khan@awkum.edu.pk",
   },
   {
-    url: "",
+    url: "FAZLULLAHKHAN.jpg",
     name: "Dr. FAZLULLAH KHAN",
     designation: "Associate Professor",
     education: "Ph.D.",
     email: "fazlullah@awkum.edu.pk",
   },
   {
-    url: "",
+    url: "RAHIMKHAN.jpg",
     name: "Dr. RAHIM KHAN",
-    designation: "Associate Professor",
+    designation: "Assistant Professor",
     education: "Ph.D.",
     email: "rahimkhan@awkum.edu.pk",
   },
   {
-    url: "",
+    url: "ROOHULLAHJANSYED.jpg",
     name: "Dr. ROOHULLAH JAN SYED",
     designation: "Lecturer",
     education: "Ph.D.",
     email: "roohullahsyed@awkum.edu.pk",
   },
   {
-    url: "",
+    url: "AAMIRAKBAR.jpg",
     name: "Dr. AAMIR AKBAR",
     designation: "Lecturer",
     education: "Ph.D.",
     email: "amirakbar@awkum.edu.pk",
   },
   {
-    url: "",
+    url: "SHAHIDAKBAR.jpg",
     name: "Dr. SHAHID AKBAR",
     designation: "Lecturer",
     education: "Ph.D.",
@@ -135,15 +135,30 @@ const Faculty = () => {
       <div className={`${Styles.facultyContainer}`}>
         <h2 className={`${Styles.facultyHeading}`}>Faculty</h2>
         <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
+          slidesPerView={1}
+          spaceBetween={10}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
           loop={true}
           pagination={{
             clickable: true,
           }}
           keyboard={{ enabled: true }}
           navigation={true}
-          modules={[Pagination, Navigation, Keyboard]}
+          modules={[Autoplay, Pagination, Navigation, Keyboard]}
           className="mySwiper"
         >
           {facultyProfiles.map((item, index) => {
