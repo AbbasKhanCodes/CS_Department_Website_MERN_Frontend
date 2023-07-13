@@ -3,7 +3,6 @@ import WelcomeHeading from "../components/WelcomeHeading/WelcomeHeading";
 import NewsAndEvents from "../components/NewsAndEvents/NewsAndEvents";
 import ChairmanMessage from "../components/ChairmanMessage/ChairmanMessage";
 import Faculty from "../components/Faculty/Faculty";
-import CardsSlider from "../components/CardSlider/CardsSlider";
 
 function CsAwkum() {
   return (
