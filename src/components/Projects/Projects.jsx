@@ -10,26 +10,26 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination, Navigation, Keyboard } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-const facultyProfiles = [
+const ProjectsProfiles = [
   {
     url: "salman.jpg",
-    name: "Dr. SALMAN",
+    name: "Hospital Management System using MERN stack",
     designation: "Lecturer",
     education: "Ph.D.",
     email: "salman@awkum.edu.pk",
   },
   {
     url: "salman1.jpg",
-    name: "Dr. SALMAN",
+    name: "Smart Mirror",
     designation: "Lecturer",
     education: "Ph.D.",
     email: "salman@awkum.edu.pk",
   },
   {
     url: "MAQSOODHAYAT.jpg",
-    name: "Dr. MAQSOOD HAYAT",
+    name: "Online Quran Portal using MERN stack",
     designation: "  Professor",
     education: "Ph.D.",
     email: "m.hayat@awkum.edu.pk",
@@ -43,7 +43,7 @@ const facultyProfiles = [
   },
   {
     url: "MIANAHMADJAN.jpg",
-    name: "Dr. MIAN AHMAD JAN",
+    name: "Sell what you don't need using React Native",
     designation: "Assistant Professor",
     education: "Ph.D.",
     email: "mianjan@awkum.edu.pk",
@@ -129,11 +129,11 @@ const facultyProfiles = [
   },
 ];
 
-const Faculty = () => {
+const Projects = () => {
   return (
     <>
-      <div className={`${Styles.facultyContainer}`}>
-        <h2 className={`${Styles.facultyHeading}`}>Faculty</h2>
+      <div className={`${Styles.projectsContainer}`}>
+        <h2 className={`${Styles.projectsHeading}`}>Projects</h2>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -156,18 +156,17 @@ const Faculty = () => {
           pagination={{
             clickable: true,
           }}
-          keyboard={{ enabled: true, pageUpDown: false, onlyInViewport: true }}
           navigation={true}
-          modules={[Autoplay, Pagination, Navigation, Keyboard]}
+          modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          {facultyProfiles.map((item, index) => {
+          {ProjectsProfiles.map((item, index) => {
             return (
               <SwiperSlide>
-                <div className={`${Styles.facultyCard}`} key={index}>
+                <div className={`${Styles.projectCard}`} key={index}>
                   <div>
                     <img
-                      src={"../images/faculty/" + item.url}
+                      src={"../images/projects/" + item.url}
                       alt={"Picture of " + item.name}
                     />
                   </div>
@@ -188,4 +187,4 @@ const Faculty = () => {
   );
 };
 
-export default Faculty;
+export default Projects;
