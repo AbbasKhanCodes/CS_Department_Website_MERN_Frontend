@@ -5,6 +5,9 @@
   border: 2px solid rgb(211, 203, 203);
   border-radius: 1%;
 }
+.chairmanMessageHeading {
+  text-align: center;
+}
 .chairmanImg {
   float: left;
   margin-right: 20px;
