@@ -4,7 +4,7 @@ function ChairmanMessage() {
   return (
     <>
       <div className={`${Styles.chairmanMessageContainer}`}>
-        <h2>Chairman Message</h2>
+        <h2 className={`${Styles.chairmanMessageHeading}`}>Chairman Message</h2>
 
         {/* Profile Image & Message Text */}
         <div className="clearfix">

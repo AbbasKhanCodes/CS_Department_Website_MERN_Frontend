@@ -24,6 +24,15 @@ body {
   align-items: center;
 }
 
+.swiper.mySwiper {
+  padding-bottom: 3rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
 /* CS Department Page */
 
 /* ######################################## Top Slider ############################################## */

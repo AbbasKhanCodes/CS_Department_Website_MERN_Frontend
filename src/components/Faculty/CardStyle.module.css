@@ -1,5 +1,5 @@
 .facultyContainer {
-  margin: 50px 40px;
+  margin: 50px 4rem;
 }
 
 .facultyHeading {
@@ -10,10 +10,10 @@
 }
 
 .facultyCard {
+  border-radius: 3%;
   width: 100%;
-  height: 395px;
   border: 2px solid gray;
-  margin: 0 20px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
