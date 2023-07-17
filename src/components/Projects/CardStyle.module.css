@@ -1,15 +1,4 @@
-.projectsContainer {
-  margin: 50px 4rem;
-}
-
-.projectsHeading {
-  background: #fff;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.projectCard {
+.Card {
   border-radius: 3%;
   width: 100%;
   border: 2px solid gray;
@@ -20,25 +9,28 @@
   justify-content: center;
 }
 
-.projectCard img {
-  width: 180px;
-  height: 180px;
+.Card img {
+  width: 240px;
+  height: 240px;
   object-fit: contain;
   border-radius: 100%;
 }
 
-.profileDetail {
+.Detail {
   margin-top: 1.5rem;
   text-align: center;
 }
 
-.profileDetail h4 {
+.Detail h4 {
   color: #5f0101;
   font-weight: 500;
 }
 
-.profileDetail p {
+.Detail p {
   margin-bottom: 5px;
   font-size: large;
   word-break: break-all;
+}
+.superviserName {
+  font-weight: bold;
 }
