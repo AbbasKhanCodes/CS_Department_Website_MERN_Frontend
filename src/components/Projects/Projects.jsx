@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <>
       <div className={`${Styles.Container}`}>
-        <h2 className={`${Styles.Heading}`}>Projects</h2>
+        <h2 className={`${Styles.Heading} sectionHeading`}>Projects</h2>
         <Card />
       </div>
     </>

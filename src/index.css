@@ -467,3 +467,12 @@ body {
 .visually-hidden {
   display: none;
 }
+
+/* color line below  section heading */
+.sectionHeading::after {
+  content: " ";
+  border: 2px solid #68a4c4;
+  margin: 0 auto 18px;
+  max-width: 295px;
+  display: block;
+}
