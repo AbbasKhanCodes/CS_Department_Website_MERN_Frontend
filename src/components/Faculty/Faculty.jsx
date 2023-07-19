@@ -5,7 +5,7 @@ const Faculty = () => {
   return (
     <>
       <div className={`${Styles.facultyContainer}`}>
-        <h2 className={`${Styles.facultyHeading}`}>Faculty</h2>
+        <h2 className={`${Styles.facultyHeading} sectionHeading`}>Faculty</h2>
         <Card />
       </div>
     </>
