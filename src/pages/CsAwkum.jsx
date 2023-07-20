@@ -4,6 +4,7 @@ import NewsAndEvents from "../components/NewsAndEvents/NewsAndEvents";
 import ChairmanMessage from "../components/ChairmanMessage/ChairmanMessage";
 import Faculty from "../components/Faculty/Faculty";
 import Projects from "../components/Projects/Projects";
+import Admissions from "../components/Admissions/Admissions";
 import Footer from "../components/Footer/Footer";
 
 function CsAwkum() {
@@ -29,6 +30,9 @@ function CsAwkum() {
 
       {/* Projects */}
       <Projects />
+
+      {/* Admissions */}
+      <Admissions />
 
       {/* Footer */}
       <Footer />
