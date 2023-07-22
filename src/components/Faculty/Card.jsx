@@ -47,7 +47,7 @@ const facultyProfiles = [
     url: "SHAHZADKHAN.jpg",
     name: "Mr. SHAHZAD KHAN",
     designation: "Lecturer",
-    education: "???",
+    education: "Ph.D.",
     email: "shahzad@awkum.edu.pk",
   },
   {
@@ -130,11 +130,11 @@ const Card = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        autoplay={{
-          delay: 3500,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
+        // autoplay={{
+        //   delay: 3500,
+        //   disableOnInteraction: false,
+        //   pauseOnMouseEnter: true,
+        // }}
         breakpoints={{
           640: {
             slidesPerView: 2,

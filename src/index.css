@@ -625,7 +625,7 @@ h6,
   padding-top: 9rem;
   background: url("../images/footer/bg-circle.png"),
     url("../images/footer/bg-triangle.png"), url("../images/footer/bg-top.png"),
-    linear-gradient(to bottom right, var(--primary), var(--secondary));
+    linear-gradient(to bottom right, #b1770e, #957b1c);
   background-position: left 0px bottom 0px, right 0px top 50%, center top;
   background-repeat: no-repeat;
 }
@@ -709,3 +709,33 @@ h6,
   justify-content: center;
 }
 /* Footer style ends here */
+
+/* color titles */
+span.colorTitle {
+  color: #b8860b;
+}
+
+/* slider card background none */
+.swiper-slide {
+  background: none;
+}
+
+/* Slider bullet points changing color */
+.facultyContainer .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.facultyContainer .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
+.ProjectContainer .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.ProjectContainer .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #b8860b;
+}

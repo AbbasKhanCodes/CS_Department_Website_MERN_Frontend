@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .container div {
@@ -18,7 +19,6 @@
 }
 
 .container .content {
-  border: 2px solid gray;
   text-align: center;
   padding: 60px;
 }

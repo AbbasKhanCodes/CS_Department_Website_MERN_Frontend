@@ -1,12 +1,14 @@
 .facultyCard {
-  border-radius: 3%;
+  background-color: #fff;
+  border-radius: 8%;
   width: 100%;
-  border: 2px solid gray;
+
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
 }
 
 .facultyCard img {
@@ -14,6 +16,7 @@
   height: 180px;
   object-fit: contain;
   border-radius: 100%;
+  /* border: 5px solid navy; */
 }
 
 .profileDetail {
@@ -22,7 +25,7 @@
 }
 
 .profileDetail h4 {
-  color: #5f0101;
+  color: #b8860b;
   font-weight: 500;
 }
 

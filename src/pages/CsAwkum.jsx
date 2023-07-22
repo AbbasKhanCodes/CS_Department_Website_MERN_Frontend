@@ -13,9 +13,6 @@ import Footer from "../components/Footer/Footer";
 function CsAwkum() {
   return (
     <>
-      {/* Slider checking */}
-      {/* <CardsSlider /> */}
-
       {/* Top Slider */}
       <TopSlider />
 
