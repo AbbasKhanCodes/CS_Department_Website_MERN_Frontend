@@ -25,5 +25,7 @@
 @media screen and (max-width: 786px) {
   .container {
     padding: 50px 1.5rem;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 }

@@ -60,11 +60,11 @@ const Card = () => {
         slidesPerView={1}
         spaceBetween={10}
         loop={true}
-        // autoplay={{
-        //   delay: 3800,
-        //   disableOnInteraction: false,
-        //   pauseOnMouseEnter: true,
-        // }}
+        autoplay={{
+          delay: 3800,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         breakpoints={{
           640: {
             slidesPerView: 2,

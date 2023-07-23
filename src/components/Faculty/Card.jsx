@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination, Navigation, Keyboard } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // Faculty Profile data
 const facultyProfiles = [
@@ -130,11 +130,11 @@ const Card = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        // autoplay={{
-        //   delay: 3500,
-        //   disableOnInteraction: false,
-        //   pauseOnMouseEnter: true,
-        // }}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -149,9 +149,8 @@ const Card = () => {
         pagination={{
           clickable: true,
         }}
-        keyboard={{ enabled: true, pageUpDown: false }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation, Keyboard]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         {facultyProfiles.map((item, index) => {
