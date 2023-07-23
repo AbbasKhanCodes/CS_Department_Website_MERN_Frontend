@@ -1,5 +1,6 @@
 .Card {
-  border-radius: 3%;
+  background-color: #fff;
+  border-radius: 8%;
   width: 100%;
   border: 2px solid gray;
   padding: 2rem;
@@ -22,14 +23,15 @@
 }
 
 .Detail h4 {
-  color: #5f0101;
+  color: #b8860b;
+  line-height: 1.27;
   font-weight: 500;
 }
 
 .Detail p {
+  margin-top: 20px;
   margin-bottom: 5px;
   font-size: large;
-  word-break: break-all;
 }
 .superviserName {
   font-weight: bold;

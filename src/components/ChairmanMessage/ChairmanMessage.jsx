@@ -5,7 +5,7 @@ function ChairmanMessage() {
     <>
       <div className={`${Styles.chairmanMessageContainer}`}>
         <h2 className={`${Styles.chairmanMessageHeading} sectionHeading`}>
-          Chairman Message
+          <span className="colorTitle">Chairman</span> Message
         </h2>
 
         {/* Profile Image & Message Text */}

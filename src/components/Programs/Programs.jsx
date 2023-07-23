@@ -4,9 +4,7 @@ const Programs = () => {
   return (
     <>
       <div className={`${Styles.container}`}>
-        <div className={`${Styles.backgroundImg}`}>
-          <div className={`${Styles.insideBackgroundImg}`}></div>
-        </div>
+        <div className={`${Styles.backgroundImg} `}></div>
         <div className={`${Styles.content}`}>
           <h2>
             Explore our <span>Programs & Majors</span>{" "}
@@ -21,7 +19,7 @@ const Programs = () => {
             opportunities that await you and choose your path to a successful
             and fulfilling career in the tech industry.
           </p>
-          <a href="https://admissions.awkum.edu.pk/">
+          <a href="https://awkum.edu.pk/faculties-colleges/faculty-of-physical-numerical-sciences/cs-garden/programs/">
             <button className="btn-primary btn-lg">Explore Programs</button>
           </a>
         </div>

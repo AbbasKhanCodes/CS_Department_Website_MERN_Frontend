@@ -22,3 +22,9 @@ p.chairmanMessage {
 .chairmanName {
   color: #ad6314;
 }
+
+@media (max-width: 400px) {
+  .chairmanImg {
+    width: 100%;
+  }
+}

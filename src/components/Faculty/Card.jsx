@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination, Navigation, Keyboard } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // Faculty Profile data
 const facultyProfiles = [
@@ -47,7 +47,7 @@ const facultyProfiles = [
     url: "SHAHZADKHAN.jpg",
     name: "Mr. SHAHZAD KHAN",
     designation: "Lecturer",
-    education: "???",
+    education: "Ph.D.",
     email: "shahzad@awkum.edu.pk",
   },
   {
@@ -149,9 +149,8 @@ const Card = () => {
         pagination={{
           clickable: true,
         }}
-        keyboard={{ enabled: true, pageUpDown: false }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation, Keyboard]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         {facultyProfiles.map((item, index) => {
