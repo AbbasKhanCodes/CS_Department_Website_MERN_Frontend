@@ -4,9 +4,7 @@ const Programs = () => {
   return (
     <>
       <div className={`${Styles.container}`}>
-        <div className={`${Styles.backgroundImg}`}>
-          <div className={`${Styles.insideBackgroundImg}`}></div>
-        </div>
+        <div className={`${Styles.backgroundImg} `}></div>
         <div className={`${Styles.content}`}>
           <h2>
             Explore our <span>Programs & Majors</span>{" "}

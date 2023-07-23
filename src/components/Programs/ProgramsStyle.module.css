@@ -12,9 +12,9 @@
 }
 
 .backgroundImg {
-  background-image: url("../images/programs/programs.jpg");
+  background-image: url("../images/programs/programs.webp");
   background-size: cover;
-  background-position: bottom;
+  background-position: left;
   background-repeat: no-repeat;
 }
 
@@ -32,11 +32,7 @@
     flex-basis: 100%;
   }
 
-  .programs3 {
+  .backgroundImg {
     background-position: -50px !important;
-  }
-
-  .programs2 {
-    background-position: -25px !important;
   }
 }
