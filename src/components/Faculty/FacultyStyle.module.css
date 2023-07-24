@@ -23,6 +23,10 @@
 }
 
 @media screen and (max-width: 786px) {
+  .wrapper {
+    background-attachment: scroll;
+  }
+
   .container {
     padding: 50px 1.5rem;
     backdrop-filter: none;
