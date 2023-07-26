@@ -30,7 +30,10 @@ body {
 }
 
 .swiper.mySwiper {
-  /* padding-bottom: 3rem; */
+  padding-bottom: 3rem;
+}
+.topSlider .swiper.mySwiper {
+  padding-bottom: 0;
 }
 
 .swiper-pagination-bullet {
