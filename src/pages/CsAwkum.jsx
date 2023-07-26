@@ -1,11 +1,10 @@
 import TopSlider from "../components/TopSlider/TopSlider";
 import WelcomeHeading from "../components/WelcomeHeading/WelcomeHeading";
-import NewsAndEvents from "../components/NewsAndEvents/NewsAndEvents";
-import ChairmanMessage from "../components/ChairmanMessage/ChairmanMessage";
+import Events from "../components/NewsAndEvents/NewsAndEvents";
 import Faculty from "../components/Faculty/Faculty";
 import Projects from "../components/Projects/Projects";
 import Programs from "../components/Programs/Programs";
-import Admissions from "../components/Admissions/Admissions";
+import ProgramsMsPhd from "../components/Programs/ProgramsMsPhd";
 import Footer from "../components/Footer/Footer";
 
 function CsAwkum() {
@@ -14,14 +13,14 @@ function CsAwkum() {
       {/* Top Slider */}
       <TopSlider />
 
-      {/* Welcome Heading  */}
+      {/*  */}
       <WelcomeHeading />
 
       {/* News & Events */}
-      <NewsAndEvents />
+      <Events />
 
       {/* Chairman Message */}
-      <ChairmanMessage />
+      {/* <ChairmanMessage /> */}
 
       {/* Faculty */}
       <Faculty />
@@ -32,8 +31,8 @@ function CsAwkum() {
       {/* Program and Majors */}
       <Programs />
 
-      {/* Admissions */}
-      <Admissions />
+      {/* Programs MS & Phd */}
+      <ProgramsMsPhd />
 
       {/* Footer */}
       <Footer />

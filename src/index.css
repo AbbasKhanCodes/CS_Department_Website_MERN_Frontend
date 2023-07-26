@@ -6,6 +6,7 @@
 html,
 body {
   position: relative;
+  background-color: #f6f6f6;
   height: 100%;
 }
 
@@ -29,7 +30,7 @@ body {
 }
 
 .swiper.mySwiper {
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
 }
 
 .swiper-pagination-bullet {
@@ -40,11 +41,17 @@ body {
 
 .topSlider .swiper-slide img {
   display: block;
-  height: 100vh;
+  height: 500px;
   width: 100vw;
   object-fit: cover;
   object-position: center;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .topSlider .swiper-slide img {
+    height: 250px;
+  }
 }
 
 .topSlider .swiper {
@@ -58,7 +65,7 @@ body {
 .topSlider .swiper-pagination-custom,
 .topSlider .swiper-horizontal > .swiper-pagination-bullets,
 .topSlider .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 85px;
+  bottom: 3px;
 }
 
 /* CS Department Page */
@@ -367,11 +374,6 @@ span.colorTitle {
   opacity: 0.5;
 }
 
-.facultyContainer .swiper-pagination-bullet-active,
-.topSlider .swiper-pagination-bullet-active {
-  opacity: 1;
-  background-color: var(--swiper-pagination-color, var(--swiper-theme-color));
-}
 .ProjectContainer .swiper-pagination-bullet {
   background-color: #fff;
   opacity: 0.5;
@@ -380,4 +382,13 @@ span.colorTitle {
 .ProjectContainer .swiper-pagination-bullet-active {
   opacity: 1;
   background-color: #b8860b;
+}
+
+.topSlider .swiper-pagination-bullet {
+  background-color: #000;
+}
+.facultyContainer .swiper-pagination-bullet-active,
+.topSlider .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--swiper-pagination-color, var(--swiper-theme-color));
 }

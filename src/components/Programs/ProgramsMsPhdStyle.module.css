@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container div {
+  flex-basis: 50%;
+  min-height: 353px;
+}
+
+.backgroundImg {
+  background-image: url("../images/admissions/admission.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.container .content {
+  text-align: center;
+  padding: 60px;
+}
+
+.content span {
+  color: darkgoldenrod;
+}
+
+@media (max-width: 700px) {
+  .container div {
+    flex-basis: 100%;
+  }
+
+  .backgroundImg {
+    background-position: -50px !important;
+  }
+}

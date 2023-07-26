@@ -1,8 +1,18 @@
+a.wrapper {
+  display: block;
+  width: 100%;
+  color: black;
+  font-weight: normal;
+}
+
+a.wrapper:hover {
+  color: black;
+}
+
 .facultyCard {
   background-color: #fff;
   border-radius: 8%;
   width: 100%;
-
   padding: 2rem;
   display: flex;
   flex-direction: column;
