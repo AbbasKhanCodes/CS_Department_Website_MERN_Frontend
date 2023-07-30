@@ -36,26 +36,22 @@ function TopSlider() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img
-              src="../images/topSlider/slider-1.jpg"
-              alt="Picture of Coding in Laptop"
-            />
-            <div className={`${Styles.wrapper}`}>
-              <h3 className={`${Styles.text}`}>
-                Building the Future of Technology
-              </h3>
-            </div>
+            <img src="../images/topSlider/1.jpg" alt="AWKUM top rank picture" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="../images/topSlider/slider-2.jpg"
-              alt="Picture of circuit"
-            />
-            <div className={`${Styles.wrapper}`}>
-              <h3 className={`${Styles.text}`}>
-                Transforming Ideas into Reality
-              </h3>
-            </div>
+            <img src="../images/topSlider/2.jpg" alt="AWKUM top rank picture" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="../images/topSlider/3.jpg" alt="AWKUM top rank picture" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="../images/topSlider/4.jpg" alt="AWKUM top rank picture" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="../images/topSlider/5.jpg" alt="AWKUM top rank picture" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="../images/topSlider/6.jpg" alt="AWKUM top rank picture" />
           </SwiperSlide>
         </Swiper>
       </div>

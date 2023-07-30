@@ -13,9 +13,9 @@
 }
 
 .backgroundImg {
-  background-image: url("../images/programs/programs.webp");
+  background-image: url("../images/admissions/admission.jpg");
   background-size: cover;
-  background-position: left;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 

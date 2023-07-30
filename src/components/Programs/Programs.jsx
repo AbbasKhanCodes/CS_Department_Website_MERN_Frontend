@@ -7,17 +7,19 @@ const Programs = () => {
         <div className={`${Styles.backgroundImg} `}></div>
         <div className={`${Styles.content}`}>
           <h2>
-            Explore our <span>Programs & Majors</span>{" "}
+            Explore our <span>Bachelor's Programs</span>{" "}
           </h2>
 
           <p>
-            Discover a world of possibilities through our comprehensive range of
-            cutting-edge programs and majors in Computer Science. Whether you're
-            passionate about artificial intelligence, cybersecurity, software
-            engineering, or data science, we offer a diverse array of
-            specialized tracks to fuel your passion for technology. Explore the
-            opportunities that await you and choose your path to a successful
-            and fulfilling career in the tech industry.
+            The structure of a BS programme in Computer Science is proposed to
+            meet the needs of students with formal computing experience and with
+            established relevant skills. Students are expected to learn
+            theoretical and practical understanding of the entire field of
+            Computer Science. The proposed structure is dynamic and provides
+            basis for various options including Breadth-Based, Depth-Based, and
+            Integrated Breadth & Depth-Based specializations. Student may choose
+            a particular option, which is most appropriate to their planned
+            future career.
           </p>
           <a href="https://awkum.edu.pk/faculties-colleges/faculty-of-physical-numerical-sciences/cs-garden/programs/">
             <button className="btn-primary btn-lg">Explore Programs</button>

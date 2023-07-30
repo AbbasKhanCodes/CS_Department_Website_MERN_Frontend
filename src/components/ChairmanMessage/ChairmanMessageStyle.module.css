@@ -1,9 +1,12 @@
 .chairmanMessageContainer {
-  margin: 1rem;
+  margin: 0;
   padding: 1rem 2rem;
-
   border: 2px solid rgb(211, 203, 203);
+  background-color: #fff;
   border-radius: 1%;
+  flex-basis: 60%;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .chairmanMessageHeading {
   text-align: center;
