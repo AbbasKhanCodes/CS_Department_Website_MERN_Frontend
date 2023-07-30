@@ -365,6 +365,12 @@ span.colorTitle {
   color: #b8860b;
 }
 
+/* color titles */
+.facultyContainer .colorTitle,
+.ProjectContainer .colorTitle {
+  color: #ffb500;
+}
+
 /* slider card background none */
 .swiper-slide {
   background: none;
