@@ -1,17 +1,37 @@
 import Styles from "./FacultyStyle.module.css";
 import Card from "./Card";
+import { motion } from "framer-motion";
+
+// Animation
+const animate = {
+  offscreen: { opacity: 0 },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 3,
+    },
+  },
+};
 
 const Faculty = () => {
   return (
     <>
-      <div className={`${Styles.wrapper} facultyContainer`}>
+      <motion.div
+        className={`${Styles.wrapper} facultyContainer`}
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        variants={animate}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <div className={`${Styles.container}`}>
           <h2 className={`${Styles.facultyHeading} sectionHeading`}>
             Our <span className="colorTitle">Faculty</span>
           </h2>
           <Card />
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

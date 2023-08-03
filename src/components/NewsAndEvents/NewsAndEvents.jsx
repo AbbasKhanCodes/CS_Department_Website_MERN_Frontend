@@ -5,6 +5,22 @@ import ChairmanMessage from "../ChairmanMessage/ChairmanMessage";
 
 import Styles from "./Style.module.css";
 
+import { motion } from "framer-motion";
+
+// Animation
+const animate = {
+  offscreen: { y: 200, opacity: 0 },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1.5,
+    },
+  },
+};
+
 function Events() {
   const [events, setEvents] = useState([]);
 
@@ -32,7 +48,13 @@ function Events() {
       <div
         className={`${Styles.container_fluid} ${Styles.content_width} ${Styles.space_below} ${Styles.NewsAndEventsContainer}`}
       >
-        <div className={`${Styles.row}`}>
+        <motion.div
+          className={`${Styles.row}`}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          variants={animate}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {/* Chairman Message */}
           <ChairmanMessage />
 
@@ -75,7 +97,7 @@ function Events() {
               </ul>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

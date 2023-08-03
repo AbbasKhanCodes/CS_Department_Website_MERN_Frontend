@@ -1,9 +1,30 @@
 import Styles from "./ProgramsMsPhdStyle.module.css";
+import { motion } from "framer-motion";
+
+// Animation
+const animate = {
+  offscreen: { y: 200, opacity: 0 },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1.5,
+    },
+  },
+};
 
 const ProgramsMsPhd = () => {
   return (
     <>
-      <div className={`${Styles.container}`}>
+      <motion.div
+        className={`${Styles.container}`}
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        variants={animate}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className={`${Styles.backgroundImg} `}></div>
         <div className={`${Styles.content}`}>
           <h2>
@@ -25,7 +46,7 @@ const ProgramsMsPhd = () => {
             <button className="btn-primary btn-lg">Explore Programs</button>
           </a>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
