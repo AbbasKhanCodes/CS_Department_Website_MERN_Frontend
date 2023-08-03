@@ -1,9 +1,48 @@
 import Styles from "./ProgramsMsPhdStyle.module.css";
+import { motion } from "framer-motion";
+
+// Animation
+let animate = {};
+const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
+if (!isMobile) {
+  animate = {
+    offscreen: { y: 200, opacity: 0 },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 1.5,
+      },
+    },
+  };
+} else {
+  animate = {
+    offscreen: { opacity: 0 },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 3,
+      },
+    },
+  };
+}
+//if the width >= 768px, boxVariants will be empty, resulting in no animation
+//you need to refresh the page, it doesn't work when you resize it!
 
 const ProgramsMsPhd = () => {
   return (
     <>
-      <div className={`${Styles.container}`}>
+      <motion.div
+        className={`${Styles.container}`}
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        variants={animate}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className={`${Styles.backgroundImg} `}></div>
         <div className={`${Styles.content}`}>
           <h2>
@@ -25,7 +64,7 @@ const ProgramsMsPhd = () => {
             <button className="btn-primary btn-lg">Explore Programs</button>
           </a>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

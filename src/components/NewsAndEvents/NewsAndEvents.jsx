@@ -5,6 +5,42 @@ import ChairmanMessage from "../ChairmanMessage/ChairmanMessage";
 
 import Styles from "./Style.module.css";
 
+import { motion } from "framer-motion";
+
+// Animation
+let animate = {};
+const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
+if (!isMobile) {
+  // These animations are for Desktop view
+  animate = {
+    offscreen: { y: 200, opacity: 0 },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 1.5,
+      },
+    },
+  };
+} else {
+  // These animations are for Mobile view
+  animate = {
+    offscreen: { opacity: 0 },
+    onscreen: {
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 2,
+      },
+    },
+  };
+}
+//if the width >= 768px, boxVariants will be empty, resulting in no animation
+//you need to refresh the page, it doesn't work when you resize it!
+
 function Events() {
   const [events, setEvents] = useState([]);
 
@@ -32,13 +68,23 @@ function Events() {
       <div
         className={`${Styles.container_fluid} ${Styles.content_width} ${Styles.space_below} ${Styles.NewsAndEventsContainer}`}
       >
-        <div className={`${Styles.row}`}>
+        <motion.div
+          className={`${Styles.row}`}
+          initial={"offscreen"}
+          whileInView={"onscreen"}
+          variants={animate}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {/* Chairman Message */}
           <ChairmanMessage />
 
           {/* <!-- EVENTS --> */}
-          <div
+          <motion.div
             className={`${Styles.panel} ${Styles.panel_dark_brown_heading} ${Styles.no_margin}`}
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            variants={animate}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <div className={`${Styles.panel_heading} ${Styles.clearfix}`}>
               <a
@@ -74,8 +120,8 @@ function Events() {
                 })}
               </ul>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </>
   );
