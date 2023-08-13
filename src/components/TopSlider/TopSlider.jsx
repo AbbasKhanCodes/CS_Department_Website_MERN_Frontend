@@ -53,6 +53,25 @@ function TopSlider() {
           <SwiperSlide>
             <img src="../images/topSlider/6.jpg" alt="AWKUM top rank picture" />
           </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={`${Styles.container}`}>
+              <div className={`${Styles.textDetail}`}>
+                <h3>CREATIVE WORKSHOP</h3>
+                <h1>BUILDING PROFESSIONAL WEBSITE</h1>
+                <h5>AN EASY INTRODUCTION TO WORDPRESS DEVELOPMENT.</h5>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={`${Styles.container} ${Styles.container2}`}>
+              <div className={`${Styles.textDetail}`}>
+                <h1>CERTIFICATE DISTRIBUTION</h1>
+                <h2>AT WORKSHOP</h2>
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </>

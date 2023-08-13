@@ -1,14 +1,18 @@
-/* Swiper js */
-
-#app {
-  height: 100%;
-}
 html,
 body {
   position: relative;
   background-color: #f6f6f6;
   height: 100%;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857;
 }
+
+#app {
+  height: 100%;
+}
+
+/* Top Slider Default Style */
 
 .swiper {
   width: 100%;
@@ -74,12 +78,6 @@ body {
 /* CS Department Page */
 
 /* ######################################## Top Slider ############################################## */
-body {
-  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-  font-size: 16px;
-  line-height: 1.42857;
-}
 
 .media-list-links .media a {
   font-weight: 400;
