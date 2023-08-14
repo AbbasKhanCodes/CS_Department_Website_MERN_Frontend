@@ -32,6 +32,10 @@ img.image {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding-top: 10%;
+  }
+
   img.image {
     width: 100%;
     padding: 10px 0;
