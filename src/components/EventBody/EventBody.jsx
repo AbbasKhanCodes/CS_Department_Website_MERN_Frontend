@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Styles from "./EventBodyStyle.module.css";
 
 export default function EventBody() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className={`${Styles.container}`}>
