@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Admin from "./pages/Admin";
 import CsAwkum from "./pages/CsAwkum";
 import Login from "./pages/login";
+import Event from "./pages/Event";
 import NotFound from "./pages/NotFound";
 
 import "./bootstrapStyle.css";
@@ -45,6 +46,9 @@ function App() {
 
                 {/* CS Department Awkum Page */}
                 <Route path="/csawkum" element={<CsAwkum />} />
+
+                {/* Event Page */}
+                <Route path="/csawkum/event/1" element={<Event />} />
 
                 {/* Not Found  */}
                 <Route path="/*" element={<NotFound />} />

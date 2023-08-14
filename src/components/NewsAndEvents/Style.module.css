@@ -299,17 +299,18 @@ a {
   text-transform: uppercase;
 }
 
-a:hover,
-a:focus {
+.media_body:hover,
+.media_body:focus {
   color: #2d4c72;
   text-decoration: underline;
 }
 
-a.date_icon:hover,
-a.date_icon:focus {
+.date_icon:hover,
+.date_icon:focus {
   background: #4270a9;
   color: white !important;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .panel_body ul {

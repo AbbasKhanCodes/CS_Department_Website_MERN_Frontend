@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 import ChairmanMessage from "../ChairmanMessage/ChairmanMessage";
+
+import { getMonthName } from "../../utilities/utilities";
 
 import Styles from "./Style.module.css";
 
@@ -103,17 +106,17 @@ function Events() {
                   return (
                     <li className={`${Styles.media}`} key={index}>
                       <div className={`${Styles.media_left}`}>
-                        <a href="#" className={`${Styles.date_icon}`}>
+                        <span className={`${Styles.date_icon}`}>
                           <span className={`${Styles.day}`}>
                             {new Date(item.date).getDate()}
                           </span>
                           <span className={`${Styles.month}`}>
-                            {new Date(item.date).getMonth() + 1}
+                            {getMonthName(new Date(item.date).getMonth() + 1)}
                           </span>
-                        </a>
+                        </span>
                       </div>
                       <div className={`${Styles.media_body}`}>
-                        <a href="#">{item.event}</a>
+                        <Link to="/csawkum/event/1">{item.event}</Link>
                       </div>
                     </li>
                   );
