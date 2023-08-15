@@ -15,6 +15,7 @@ import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
 import Styles from "./TopSliderStyle.module.css";
 
 function TopSlider() {
+  const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
   return (
     <>
       {/* Top Slider */}
@@ -22,10 +23,10 @@ function TopSlider() {
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
-          autoplay={{
-            delay: 4800,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 4800,
+          //   disableOnInteraction: false,
+          // }}
           effect={"fade"}
           loop={true}
           pagination={{
@@ -36,22 +37,48 @@ function TopSlider() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src="../images/topSlider/1.jpg" alt="AWKUM top rank picture" />
+            <img
+              src="../images/topSlider/mobile/1.webp"
+              srcset="../images/topSlider/mobile/1.webp 700w, ../images/topSlider/1.jpg 1920w"
+              alt="AWKUM top rank picture"
+            />
+          </SwiperSlide>
+
+          {!isMobile && (
+            <SwiperSlide>
+              <img
+                src="../images/topSlider/2.jpg"
+                alt="AWKUM top rank picture"
+              />
+            </SwiperSlide>
+          )}
+          <SwiperSlide>
+            <img
+              src="../images/topSlider/mobile/2.webp"
+              srcset="../images/topSlider/mobile/3.webp 700w, ../images/topSlider/3.jpg 1920w"
+              alt="AWKUM top rank picture"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../images/topSlider/2.jpg" alt="AWKUM top rank picture" />
+            <img
+              src="../images/topSlider/mobile/4.webp"
+              srcset="../images/topSlider/mobile/4.webp 700w, ../images/topSlider/4.jpg 1920w"
+              alt="AWKUM top rank picture"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../images/topSlider/3.jpg" alt="AWKUM top rank picture" />
+            <img
+              src="../images/topSlider/mobile/5.webp"
+              srcset="../images/topSlider/mobile/5.webp 700w, ../images/topSlider/5.jpg 1920w"
+              alt="AWKUM top rank picture"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="../images/topSlider/4.jpg" alt="AWKUM top rank picture" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../images/topSlider/5.jpg" alt="AWKUM top rank picture" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="../images/topSlider/6.jpg" alt="AWKUM top rank picture" />
+            <img
+              src="../images/topSlider/mobile/6.webp"
+              srcset="../images/topSlider/mobile/6.webp 700w, ../images/topSlider/6.jpg 1920w"
+              alt="AWKUM top rank picture"
+            />
           </SwiperSlide>
 
           <SwiperSlide>
