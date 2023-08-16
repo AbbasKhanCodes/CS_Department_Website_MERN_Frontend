@@ -377,7 +377,7 @@ span.colorTitle {
 /* Slider bullet points changing color */
 .facultyContainer .swiper-pagination-bullet,
 .topSlider .swiper-pagination-bullet {
-  background-color: #fff;
+  /* background-color: #fff; */
   opacity: 0.5;
 }
 

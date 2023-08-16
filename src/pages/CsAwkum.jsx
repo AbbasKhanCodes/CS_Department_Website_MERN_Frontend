@@ -20,17 +20,17 @@ function CsAwkum() {
   return (
     <>
       {/* Popup-admission */}
-      {popupOpen &&
+      {!popupOpen &&
         createPortal(<Popup onClose={handleCloseBtn} />, document.body)}
 
       {/* Top Slider */}
-      <TopSlider />
+      {/* <TopSlider /> */}
 
       {/* Welcome Heading */}
-      <WelcomeHeading />
+      {/* <WelcomeHeading /> */}
 
       {/* News & Events */}
-      <Events />
+      {/* <Events /> */}
 
       {/* Chairman Message */}
       {/* <ChairmanMessage /> */}
@@ -39,16 +39,16 @@ function CsAwkum() {
       <Faculty />
 
       {/* Projects */}
-      <Projects />
+      {/* <Projects /> */}
 
       {/* Program and Majors */}
-      <Programs />
+      {/* <Programs /> */}
 
       {/* Programs MS & Phd */}
-      <ProgramsMsPhd />
+      {/* <ProgramsMsPhd /> */}
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

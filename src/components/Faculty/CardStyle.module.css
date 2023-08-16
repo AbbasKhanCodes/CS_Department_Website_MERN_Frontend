@@ -1,6 +1,13 @@
+.mySwiper.faculty {
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  font-family: "PracticeRegular", serif !important;
+}
+
 a.wrapper {
   display: block;
-  width: 100%;
+  width: fit-content;
   color: black;
   font-weight: normal;
 }
@@ -10,28 +17,35 @@ a.wrapper:hover {
 }
 
 .facultyCard {
-  background-color: #fff;
-  border-radius: 8%;
+  /* background-color: #fff; */
+  /* border-radius: 8%; */
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: start;
   background-attachment: fixed;
 }
 
 .facultyCard img {
-  width: 180px;
-  height: 180px;
+  width: 162px;
+  height: 162px;
+  /* width: 180px;
+  height: 180px; */
   object-fit: contain;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   /* border: 5px solid navy; */
 }
 
 .profileDetail {
   margin-top: 1.5rem;
-  text-align: center;
+  text-align: left;
+
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .profileDetail h4 {
@@ -40,7 +54,14 @@ a.wrapper:hover {
 }
 
 .profileDetail p {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+  font-size: 0.977em;
+  color: #002147;
+  font-weight: 100;
+}
+
+.profileDetail .name {
   font-size: large;
-  word-break: break-all;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
