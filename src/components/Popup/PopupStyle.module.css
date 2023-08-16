@@ -1,0 +1,71 @@
+.modalContainer {
+  /* border: 10px solid red; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.9);
+  z-index: 2;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.closeBtn {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.closeBtn button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: -6px;
+}
+
+.container {
+  border-radius: 5px;
+  cursor: auto;
+  min-width: 800px;
+}
+
+.wrapperContent {
+  background-image: url("../images/admissions/campus.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 7% 42.5% 7% 4%;
+}
+
+@media (max-width: 782px) {
+  .container {
+    min-width: auto;
+  }
+
+  .wrapperContent {
+    background-size: contain;
+    background-position: top;
+    min-width: auto;
+    padding: 10px;
+    padding-top: 55%;
+  }
+}
+
+.closeBtnBelow {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.closeBtnBelow button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}

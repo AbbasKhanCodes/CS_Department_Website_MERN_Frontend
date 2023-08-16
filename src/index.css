@@ -1,0 +1,401 @@
+html,
+body {
+  position: relative;
+  background-color: #f6f6f6;
+  height: 100%;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857;
+}
+
+#app {
+  height: 100%;
+}
+
+/* Top Slider Default Style */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.topSlider .swiper-wrapper {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 8px;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper.mySwiper {
+  padding-bottom: 3rem;
+}
+.topSlider .swiper.mySwiper {
+  padding-bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+/* Top slider swiper */
+
+.topSlider .swiper-slide img {
+  display: block;
+  height: 500px;
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .topSlider .swiper-slide img {
+    height: 250px;
+  }
+}
+
+.topSlider .swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* bullets */
+
+.topSlider .swiper-pagination-fraction,
+.topSlider .swiper-pagination-custom,
+.topSlider .swiper-horizontal > .swiper-pagination-bullets,
+.topSlider .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 3px;
+}
+
+/* CS Department Page */
+
+/* ######################################## Top Slider ############################################## */
+
+.media-list-links .media a {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+/* Admin Page */
+
+.react-datepicker__month-container {
+  float: left;
+}
+
+/* Login Page */
+
+.loginContainer {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+  height: 100vh;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+/* color line below  section heading */
+.sectionHeading::after {
+  content: " ";
+  border: 2px solid #68a4c4;
+  margin: 0 auto 18px;
+  max-width: 295px;
+  display: block;
+}
+
+/* Footer style starts here */
+
+/********** Template CSS **********/
+:root {
+  --primary: #4294e3;
+  --secondary: #8f12fd;
+  --light: #f0f6ff;
+  --dark: #262b47;
+}
+
+/*** Heading ***/
+h1,
+h2,
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+h3,
+h4,
+.fw-semi-bold {
+  font-weight: 600 !important;
+}
+
+h5,
+h6,
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+/*** Gradient Text & BG ***/
+.text-primary-gradient {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-secondary-gradient {
+  background: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--primary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+}
+
+.bg-secondary-gradient {
+  background: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--primary)
+  );
+}
+
+/*** Button ***/
+.btn {
+  transition: 0.5s;
+}
+
+.btn.btn-primary-gradient,
+.btn.btn-secondary-gradient {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.btn.btn-primary-gradient::after,
+.btn.btn-secondary-gradient::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+  opacity: 0;
+}
+
+.btn.btn-primary-gradient,
+.btn.btn-secondary-gradient::after {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+}
+
+.btn.btn-secondary-gradient,
+.btn.btn-primary-gradient::after {
+  background: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--primary)
+  );
+}
+
+.btn.btn-primary-gradient:hover::after,
+.btn.btn-secondary-gradient:hover::after {
+  opacity: 1;
+}
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 50px;
+}
+
+/*** Footer ***/
+.footer {
+  margin-top: 6rem;
+  padding-top: 9rem;
+  background: url("../images/footer/bg-circle.png"),
+    url("../images/footer/bg-triangle.png"), url("../images/footer/bg-top.png"),
+    linear-gradient(to bottom right, #b1770e, #957b1c);
+  background-position: left 0px bottom 0px, right 0px top 50%, center top;
+  background-repeat: no-repeat;
+}
+
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  border: 1px solid rgba(256, 256, 256, 0.1);
+  border-radius: 40px;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0;
+  text-align: left;
+  color: var(--light);
+  font-weight: normal;
+  transition: 0.3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 14px;
+  border-top: 1px solid rgba(256, 256, 256, 0.1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
+
+.footer .footer-menu a {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footer-menu a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+/* give space between icon & text in contact info */
+.footer .contactInfo p i {
+  margin-right: 10px;
+  margin-bottom: 7px;
+}
+
+/* Placing Button of newsletter inside input text box */
+.footer .newsletterBtn {
+  top: 0;
+  right: 5px;
+}
+
+/* centering content of footer  */
+.footer .container .row {
+  justify-content: center;
+}
+/* Footer style ends here */
+
+/* color titles */
+span.colorTitle {
+  color: #b8860b;
+}
+
+/* color titles */
+.facultyContainer .colorTitle,
+.ProjectContainer .colorTitle {
+  color: #ffb500;
+}
+
+/* slider card background none */
+.swiper-slide {
+  background: none;
+}
+
+/* Slider bullet points changing color */
+.facultyContainer .swiper-pagination-bullet,
+.topSlider .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.ProjectContainer .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.ProjectContainer .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #b8860b;
+}
+
+.topSlider .swiper-pagination-bullet {
+  background-color: #000;
+}
+.facultyContainer .swiper-pagination-bullet-active,
+.topSlider .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
