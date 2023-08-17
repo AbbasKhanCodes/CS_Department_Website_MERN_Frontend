@@ -2,7 +2,6 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 
 import TopSlider from "../components/TopSlider/TopSlider";
-import WelcomeHeading from "../components/WelcomeHeading/WelcomeHeading";
 import Events from "../components/NewsAndEvents/NewsAndEvents";
 import Faculty from "../components/Faculty/Faculty";
 import Projects from "../components/Projects/Projects";
@@ -28,13 +27,13 @@ function CsAwkum() {
       <Header />
 
       {/* Top Slider */}
-      {/* <TopSlider /> */}
+      <TopSlider />
 
       {/* Welcome Heading */}
       {/* <WelcomeHeading /> */}
 
       {/* News & Events */}
-      {/* <Events /> */}
+      <Events />
 
       {/* Chairman Message */}
       {/* <ChairmanMessage /> */}
@@ -43,16 +42,16 @@ function CsAwkum() {
       <Faculty />
 
       {/* Projects */}
-      {/* <Projects /> */}
+      <Projects />
 
       {/* Program and Majors */}
-      {/* <Programs /> */}
+      <Programs />
 
       {/* Programs MS & Phd */}
-      {/* <ProgramsMsPhd /> */}
+      <ProgramsMsPhd />
 
       {/* Footer */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

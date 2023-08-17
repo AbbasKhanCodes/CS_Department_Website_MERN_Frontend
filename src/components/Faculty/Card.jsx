@@ -178,7 +178,12 @@ const Card = () => {
                     <p>{item.education}</p>
                     <p>
                       {" "}
-                      <button onClick={handleEmailClick}>Send Email</button>
+                      <button
+                        className="btn-primary btn-sm"
+                        onClick={handleEmailClick}
+                      >
+                        Send Email
+                      </button>
                     </p>
                   </div>
                 </div>
