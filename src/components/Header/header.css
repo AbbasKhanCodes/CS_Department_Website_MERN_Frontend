@@ -1,0 +1,55 @@
+.Header-Main {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.Header-Main-Top {
+  background-color: crimson;
+  padding: 5px 0px;
+  color: white;
+  font-weight: 600;
+}
+.Header-Main-Top > p {
+  margin: 0px;
+  margin-left: 24px;
+  padding: 0px;
+}
+.Header-Main-Middle {
+  background-color: rgb(68, 143, 241);
+  padding: 20px 24px;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.Header-Main-Middle > p {
+  margin: 0px;
+  font-weight: 800;
+}
+.Header-Main-Middle > p > span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.Header-Main-Bottom {
+  background-color: rgb(237, 237, 237);
+  padding: 15px 24px;
+  color: #333;
+  font-weight: 600;
+  font-size: 24px;
+}
+.header-heading {
+  color: rgb(88, 48, 34);
+  font-size: 32px;
+  font-weight: 800;
+}
+
+@media (max-width: 486px) {
+  .Header-Main-Middle > p > span {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
