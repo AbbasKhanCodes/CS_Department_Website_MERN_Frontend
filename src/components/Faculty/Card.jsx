@@ -123,6 +123,9 @@ const facultyProfiles = [
 ];
 
 const Card = () => {
+  const handleEmailClick = () => {
+    window.open("mailto:ali@gmail.com", "_blank");
+  };
   return (
     <>
       <Swiper
@@ -154,12 +157,13 @@ const Card = () => {
         {facultyProfiles.map((item, index) => {
           return (
             <SwiperSlide>
-              <a
+              <div
                 href="https://portal.awkum.edu.pk/faculty"
-                className={`${Styles.wrapper}`}
+                className={`${Styles.wrapper} ${Styles.facultyCard}`}
+                key={index}
               >
-                <div className={`${Styles.facultyCard}`} key={index}>
-                  <div>
+                <div className={`${Styles.col}`}>
+                  <div className={`${Styles.imgWrapper}`}>
                     <img
                       className={`${Styles.SalmanImagePosition}`}
                       src={"../images/faculty/" + item.url}
@@ -172,10 +176,13 @@ const Card = () => {
                     </p>
                     <p>{item.designation}</p>
                     <p>{item.education}</p>
-                    <p>{item.email}</p>
+                    <p>
+                      {" "}
+                      <button onClick={handleEmailClick}>Send Email</button>
+                    </p>
                   </div>
                 </div>
-              </a>
+              </div>
             </SwiperSlide>
           );
         })}
