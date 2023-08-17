@@ -10,6 +10,7 @@ import Programs from "../components/Programs/Programs";
 import ProgramsMsPhd from "../components/Programs/ProgramsMsPhd";
 import Footer from "../components/Footer/Footer";
 import Popup from "../components/Popup/Popup";
+import Header from "../components/Header/Header";
 
 function CsAwkum() {
   const [popupOpen, setPopupOpen] = useState(true);
@@ -22,6 +23,9 @@ function CsAwkum() {
       {/* Popup-admission */}
       {!popupOpen &&
         createPortal(<Popup onClose={handleCloseBtn} />, document.body)}
+
+      {/* Header */}
+      <Header />
 
       {/* Top Slider */}
       {/* <TopSlider /> */}
