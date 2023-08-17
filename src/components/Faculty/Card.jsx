@@ -123,8 +123,8 @@ const facultyProfiles = [
 ];
 
 const Card = () => {
-  const handleEmailClick = () => {
-    window.open("mailto:ali@gmail.com", "_blank");
+  const handleEmailClick = (mail) => {
+    window.open("mailto:" + mail, "_blank");
   };
   return (
     <>
@@ -180,7 +180,9 @@ const Card = () => {
                       {" "}
                       <button
                         className="btn-primary btn-sm"
-                        onClick={handleEmailClick}
+                        onClick={() => {
+                          handleEmailClick(item.email);
+                        }}
                       >
                         Send Email
                       </button>
