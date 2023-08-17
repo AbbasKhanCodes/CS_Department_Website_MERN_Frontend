@@ -20,6 +20,11 @@
 
 p.chairmanMessage {
   text-align: justify;
+  margin-bottom: 0;
+}
+
+.ReadMoreBtn {
+  margin: 0.5rem 0;
 }
 
 .chairmanName {
