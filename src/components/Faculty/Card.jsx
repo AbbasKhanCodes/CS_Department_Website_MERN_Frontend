@@ -172,6 +172,7 @@ const Card = () => {
                   </div>
                   <div className={`${Styles.profileDetail}`}>
                     <p className={`${Styles.name}`}>
+                      {item.name.title}{" "}
                       {capitalizeFirstLetter(item.name.fullName)}
                     </p>
                     <p>{item.designation}</p>

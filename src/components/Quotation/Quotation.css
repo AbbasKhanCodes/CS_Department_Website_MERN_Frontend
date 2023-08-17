@@ -1,0 +1,56 @@
+.quotation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  margin-bottom: 20px;
+
+  opacity: 0.8;
+  background-image: url("../../../public/images/Research/background.svg");
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.quotation-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  padding: 16px;
+  width: 100%; /* Adjusted for responsiveness */
+  max-width: 650px; /* Added max-width for larger screens */
+  background-color: #f7bc45;
+}
+@media screen and (max-width: 1024px) {
+  .quotation-text {
+    font-size: 1.2rem;
+    width: 470px;
+  }
+  .quotation {
+    background-image: url("../../../public/images/Research/background1.svg");
+  }
+}
+
+/* Media query for screens with max width of 768px */
+@media screen and (max-width: 768px) {
+  .quotation-text {
+    font-size: 16px;
+    max-width: 420px;
+  }
+  .quotation {
+    background-image: url("../../../public/images/Research/background.svg");
+  }
+}
+
+/* Media query for screens with max width of 412px */
+@media screen and (max-width: 412px) {
+  .quotation-text {
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #f7bc45;
+    width: 270px;
+  }
+  .quotation {
+    background-image: url("../../../public/images/Research/background.svg");
+  }
+}
