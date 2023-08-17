@@ -1,4 +1,4 @@
-.quotation{
+/* .quotation{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,8 +27,7 @@
     }
     .quotation{
         opacity: 0.8;
-background-image: radial-gradient(circle at center center, #e2b367, #e5e5f7), repeating-radial-gradient(circle at center center, #e2b367, #e2b367, 10px, transparent 20px, transparent 10px);
-background-blend-mode: multiply;
+        background-image: url('../../../public/images/Research/background.svg');
     }
 }
 @media screen and (max-width: 412px){
@@ -40,7 +39,64 @@ background-blend-mode: multiply;
     }
     .quotation{
         opacity: 0.8;
-background-image: radial-gradient(circle at center center, #e2b367, #e5e5f7), repeating-radial-gradient(circle at center center, #e2b367, #e2b367, 10px, transparent 20px, transparent 10px);
-background-blend-mode: multiply;
+        background-image: radial-gradient(circle at center center, #e2b367, #e5e5f7), repeating-radial-gradient(circle at center center, #e2b367, #e2b367, 10px, transparent 20px, transparent 10px);
+        background-blend-mode: multiply;
     }
+} */
+.quotation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: url('../../../public/images/Research/background.svg');
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.quotation-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    padding: 16px;
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 650px; /* Added max-width for larger screens */
+    background-color: #f7bc45;
+}
+@media screen and (max-width: 1024px) {
+    .quotation-text {
+        font-size: 1.2rem;
+        width: 470px;  
+    }
+    .quotation{
+        background-image: url('../../../public/images/Research/background1.svg');
+    }
+}
+
+/* Media query for screens with max width of 768px */
+@media screen and (max-width: 768px) {
+    .quotation-text {
+        font-size: 16px;
+        max-width: 420px;
+    }
+    .quotation {
+        background-image: url('../../../public/images/Research/background.svg');
+    }
+}
+
+
+/* Media query for screens with max width of 412px */
+@media screen and (max-width: 412px) {
+    .quotation-text {
+        font-size: 12px;
+        font-weight: 400;
+        background-color: #f7bc45;
+        width: 270px;
+    }
+    .quotation {
+        background-image: url('../../../public/images/Research/background.svg');
+          }
 }

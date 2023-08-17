@@ -26,7 +26,7 @@ function CsAwkum() {
         createPortal(<Popup onClose={handleCloseBtn} />, document.body)}
       {/* Header */}
       <Header />
-      {/* <ResearchCards /> */}
+      <ResearchCards />
       <Quotation />
       {/* Top Slider */}
       {/* <TopSlider /> */}
