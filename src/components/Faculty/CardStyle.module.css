@@ -47,16 +47,18 @@
 
 .imgWrapper {
   text-align: left;
+  overflow: hidden;
 }
 
 .facultyCard img {
   width: 162px;
   height: 162px;
-  /* width: 180px;
-  height: 180px; */
   object-fit: contain;
-  /* border-radius: 100%; */
-  /* border: 5px solid navy; */
+  transition: transform 0.3s ease-in;
+}
+
+.facultyCard:hover img {
+  transform: scale(1.2);
 }
 
 .profileDetail {
@@ -88,4 +90,9 @@
   font-size: large;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.emailBtn {
+  font-size: 16px;
+  font-weight: normal;
 }

@@ -131,11 +131,11 @@ const Card = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        autoplay={{
-          delay: 3500,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
+        // autoplay={{
+        //   delay: 3500,
+        //   disableOnInteraction: false,
+        //   pauseOnMouseEnter: true,
+        // }}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -180,7 +180,8 @@ const Card = () => {
                     <p>
                       {" "}
                       <button
-                        className="btn-primary btn-sm"
+                        className={`${Styles.emailBtn} button18 mt-2`}
+                        role="button"
                         onClick={() => {
                           handleEmailClick(item.email);
                         }}

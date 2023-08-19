@@ -22,7 +22,7 @@ function ChairmanMessage() {
             this institution dedicated to excellence in education, research, and
             innovation...,
           </p>
-          <button className={`${Styles.ReadMoreBtn} btn-primary btn-sm`}>
+          <button className={`${Styles.ReadMoreBtn}  button18`} role="button">
             Read More
           </button>
         </div>
