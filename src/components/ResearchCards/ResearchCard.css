@@ -1,4 +1,4 @@
-.research-cards-container{
+.research-cards-container {
   display: flex;
   flex-direction: column;
   margin: 10px auto;
@@ -28,6 +28,12 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
+
+.research-card-text-heading {
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
 .research-card > h3 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -35,7 +41,7 @@
   margin: 5px 0px;
   padding: 0 0 0 0;
 }
-.research-card > h5{
+.research-card > h5 {
   margin: 10px 0px;
 }
 .research-card > img {
@@ -43,25 +49,25 @@
   height: auto;
   border-radius: 10px 10px 0 0;
 }
-.research-card-text-box{
+.research-card-text-box {
   margin: 10px auto;
   max-width: 800px;
 }
-.research-card-text-box > h2{
+.research-card-text-box > h2 {
   margin-left: 10px;
   margin-right: 10px;
 }
-.research-card-text-box > p{
+.research-card-text-box > p {
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .ResearchButton {
- color: rgb(238, 91, 121);
- border: none;
- align-self: flex-start;
- background-color: transparent;
- padding: 0px;
+  color: rgb(238, 91, 121);
+  border: none;
+  align-self: flex-start;
+  background-color: transparent;
+  padding: 0px;
 }
 @media screen and (max-width: 768px) {
   .research-cards {
