@@ -4,12 +4,12 @@ const Quotation = () => {
     <div className="quotation">
       <div className="quotation-text">
         <img
-          src="../../../public/images/Research/quotation-front.svg"
+          src="./images/Research/quotation-front.svg"
           alt=""
           className="quotation-front"
         />
         <img
-          src="../../../public/images/Research/quotation-back.svg"
+          src="./images/Research/quotation-back.svg"
           alt=""
           className="quotation-back"
         />
