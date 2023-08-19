@@ -7,13 +7,13 @@ const ResearchCards = () => {
         <img src="./images/Research/research1.jpg" alt="" />
         <h3>Researches in AWKUM</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam</p>
-        <button>Read More...</button>
+        <button className="ResearchButton">Read More...</button>
       </div>
       <div className="research-card">
         <img src="./images/Research/research2.jpg" alt="" />
         <h3>Technology</h3>
         <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam</p>
-        <button>Read More...</button>
+        <button className="ResearchButton">Read More...</button>
       </div>
     </div>
   );
