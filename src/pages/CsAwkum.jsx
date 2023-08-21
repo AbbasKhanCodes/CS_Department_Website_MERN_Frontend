@@ -2,7 +2,6 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 
 import TopSlider from "../components/TopSlider/TopSlider";
-import WelcomeHeading from "../components/WelcomeHeading/WelcomeHeading";
 import Events from "../components/NewsAndEvents/NewsAndEvents";
 import Faculty from "../components/Faculty/Faculty";
 import Projects from "../components/Projects/Projects";
@@ -11,6 +10,9 @@ import ProgramsMsPhd from "../components/Programs/ProgramsMsPhd";
 import Footer from "../components/Footer/Footer";
 import Popup from "../components/Popup/Popup";
 import Header from "../components/Header/Header";
+
+import ResearchCards from "../components/ResearchCards/ResearchCard";
+import Quotation from "../components/Quotation/Quotation";
 
 function CsAwkum() {
   const [popupOpen, setPopupOpen] = useState(true);
@@ -31,7 +33,10 @@ function CsAwkum() {
       <TopSlider />
 
       {/* Welcome Heading */}
-      <WelcomeHeading />
+      {/* <WelcomeHeading /> */}
+
+      <ResearchCards />
+      <Quotation />
 
       {/* News & Events */}
       <Events />

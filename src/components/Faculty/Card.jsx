@@ -9,6 +9,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+// Import capitilize words
+import { capitalizeFirstLetter } from "../../utilities/utilities";
+
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
@@ -16,7 +19,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const facultyProfiles = [
   {
     url: "SHERAFZALKHAN.jpg",
-    name: "Dr. SHER AFZAL KHAN",
+    name: { title: "Dr.", fullName: "SHER AFZAL KHAN" },
     designation: "Professor",
     education: "Ph.D.",
     email: "sher.afzal@awkum.edu.pk",
@@ -24,21 +27,21 @@ const facultyProfiles = [
 
   {
     url: "MAQSOODHAYAT.jpg",
-    name: "Dr. MAQSOOD HAYAT",
+    name: { title: "Dr.", fullName: "MAQSOOD HAYAT" },
     designation: "  Professor",
     education: "Ph.D.",
     email: "m.hayat@awkum.edu.pk",
   },
   {
     url: "nadeemIqbal.jpg",
-    name: "Dr. NADEEM IQBAL",
+    name: { title: "Dr.", fullName: "NADEEM IQBAL" },
     designation: "Associate Professor",
     education: "Ph.D.",
     email: "nikhan@awkum.edu.pk",
   },
   {
     url: "RAHIMKHAN.jpg",
-    name: "Dr. RAHIM KHAN",
+    name: { title: "Dr.", fullName: "RAHIM KHAN" },
     designation: "Assistant Professor",
     education: "Ph.D.",
     email: "rahimkhan@awkum.edu.pk",
@@ -46,14 +49,14 @@ const facultyProfiles = [
 
   {
     url: "IZAZURREHMAN.jpg",
-    name: "Dr. IZAZ UR REHMAN",
+    name: { title: "Dr.", fullName: "IZAZ UR REHMAN" },
     designation: "Assistant Professor",
     education: "Ph.D.",
     email: "izaz@awkum.edu.pk",
   },
   {
     url: "FAZLULLAHKHAN.jpg",
-    name: "Dr. FAZLULLAH KHAN",
+    name: { title: "Dr.", fullName: "FAZLULLAH KHAN" },
     designation: "Associate Professor",
     education: "Ph.D.",
     email: "fazlullah@awkum.edu.pk",
@@ -61,14 +64,14 @@ const facultyProfiles = [
 
   {
     url: "HASHIMALI.jpg",
-    name: "Dr. HASHIM ALI",
+    name: { title: "Dr.", fullName: "HASHIM ALI" },
     designation: "Assistant Professor",
     education: "Ph.D.",
     email: "hashimali@awkum.edu.pk",
   },
   {
     url: "MIANAHMADJAN.jpg",
-    name: "Dr. MIAN AHMAD JAN",
+    name: { title: "Dr.", fullName: "MIAN AHMAD JAN" },
     designation: "Assistant Professor",
     education: "Ph.D.",
     email: "mianjan@awkum.edu.pk",
@@ -76,28 +79,28 @@ const facultyProfiles = [
 
   {
     url: "MUHAMMADTAHIR.jpg",
-    name: "Dr. MUHAMMAD TAHIR",
+    name: { title: "Dr.", fullName: "MUHAMMAD TAHIR" },
     designation: "Assistant Professor",
     education: "Ph.D.",
     email: "muhammadtahir@awkum.edu.pk",
   },
   {
     url: "AFTABAHMED.jpg",
-    name: "Dr. AFTAB AHMED",
+    name: { title: "Dr.", fullName: "AFTAB AHMED" },
     designation: "Lecturer",
     education: "Ph.D.",
     email: "aftab.ahmed.khan@awkum.edu.pk",
   },
   {
     url: "salman.jpg",
-    name: "Dr. SALMAN",
+    name: { title: "Dr.", fullName: "SALMAN" },
     designation: "Lecturer",
     education: "Ph.D.",
     email: "salman@awkum.edu.pk",
   },
   {
     url: "SHAHZADKHAN.jpg",
-    name: "Mr. SHAHZAD KHAN",
+    name: { title: "Mr.", fullName: "SHAHZAD KHAN" },
     designation: "Lecturer",
     education: "",
     email: "shahzad@awkum.edu.pk",
@@ -105,14 +108,14 @@ const facultyProfiles = [
 
   {
     url: "ROOHULLAHJANSYED.jpg",
-    name: "Dr. ROOHULLAH JAN SYED",
+    name: { title: "Dr.", fullName: "ROOHULLAH JAN SYED" },
     designation: "Lecturer",
     education: "Ph.D.",
     email: "roohullahsyed@awkum.edu.pk",
   },
   {
     url: "AAMIRAKBAR.jpg",
-    name: "Dr. AAMIR AKBAR",
+    name: { title: "Dr.", fullName: "AAMIR AKBAR" },
     designation: "Lecturer",
     education: "Ph.D.",
     email: "amirakbar@awkum.edu.pk",
@@ -120,16 +123,19 @@ const facultyProfiles = [
 ];
 
 const Card = () => {
+  const handleEmailClick = (mail) => {
+    window.open("mailto:" + mail, "_blank");
+  };
   return (
     <>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        autoplay={{
-          delay: 3500,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
+        // autoplay={{
+        //   delay: 3500,
+        //   disableOnInteraction: false,
+        //   pauseOnMouseEnter: true,
+        // }}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -146,17 +152,18 @@ const Card = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className={`${Styles.mySwiper} ${Styles.faculty} mySwiper`}
       >
         {facultyProfiles.map((item, index) => {
           return (
             <SwiperSlide>
-              <a
+              <div
                 href="https://portal.awkum.edu.pk/faculty"
-                className={`${Styles.wrapper}`}
+                className={`${Styles.wrapper} ${Styles.facultyCard}`}
+                key={index}
               >
-                <div className={`${Styles.facultyCard}`} key={index}>
-                  <div>
+                <div className={`${Styles.col}`}>
+                  <div className={`${Styles.imgWrapper}`}>
                     <img
                       className={`${Styles.SalmanImagePosition}`}
                       src={"../images/faculty/" + item.url}
@@ -164,13 +171,26 @@ const Card = () => {
                     />
                   </div>
                   <div className={`${Styles.profileDetail}`}>
-                    <h4>{item.name}</h4>
+                    <p className={`${Styles.name}`}>
+                      {capitalizeFirstLetter(item.name.fullName)}
+                    </p>
                     <p>{item.designation}</p>
                     <p>{item.education}</p>
-                    <p>{item.email}</p>
+                    <p>
+                      {" "}
+                      <button
+                        className={`${Styles.emailBtn} button18 mt-2`}
+                        role="button"
+                        onClick={() => {
+                          handleEmailClick(item.email);
+                        }}
+                      >
+                        Send Email
+                      </button>
+                    </p>
                   </div>
                 </div>
-              </a>
+              </div>
             </SwiperSlide>
           );
         })}

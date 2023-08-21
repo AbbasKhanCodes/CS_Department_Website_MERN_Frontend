@@ -43,9 +43,20 @@ const Faculty = () => {
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className={`${Styles.container}`}>
-          <h2 className={`${Styles.facultyHeading} sectionHeading`}>
-            Our <span className="colorTitle">Faculty</span>
-          </h2>
+          {/* Faculty Heading */}
+          <div className={`${Styles.row}`}>
+            <h2 className={`${Styles.facultyHeading} `}>Meet the faculty</h2>
+          </div>
+
+          {/* Paragraph text */}
+          <div className={`${Styles.row}`}>
+            <p>
+              AWKUM CS department’s outstanding faculty offer access to
+              world-class research, a wealth of industry experience and the
+              ability to present complex concepts and lead high-level executive
+              debate.
+            </p>
+          </div>
           <Card />
         </div>
       </motion.div>

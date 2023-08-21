@@ -37,51 +37,6 @@ function TopSlider() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img
-              src="../images/topSlider/mobile/1.webp"
-              srcset="../images/topSlider/mobile/1.webp 700w, ../images/topSlider/1.jpg 1920w"
-              alt="AWKUM top rank picture"
-            />
-          </SwiperSlide>
-
-          {!isMobile && (
-            <SwiperSlide>
-              <img
-                src="../images/topSlider/2.jpg"
-                alt="AWKUM top rank picture"
-              />
-            </SwiperSlide>
-          )}
-          <SwiperSlide>
-            <img
-              src="../images/topSlider/mobile/2.webp"
-              srcset="../images/topSlider/mobile/3.webp 700w, ../images/topSlider/3.jpg 1920w"
-              alt="AWKUM top rank picture"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="../images/topSlider/mobile/4.webp"
-              srcset="../images/topSlider/mobile/4.webp 700w, ../images/topSlider/4.jpg 1920w"
-              alt="AWKUM top rank picture"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="../images/topSlider/mobile/5.webp"
-              srcset="../images/topSlider/mobile/5.webp 700w, ../images/topSlider/5.jpg 1920w"
-              alt="AWKUM top rank picture"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="../images/topSlider/mobile/6.webp"
-              srcset="../images/topSlider/mobile/6.webp 700w, ../images/topSlider/6.jpg 1920w"
-              alt="AWKUM top rank picture"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide>
             <div className={`${Styles.container}`}>
               <div className={`${Styles.textDetail}`}>
                 <h3>CREATIVE WORKSHOP</h3>

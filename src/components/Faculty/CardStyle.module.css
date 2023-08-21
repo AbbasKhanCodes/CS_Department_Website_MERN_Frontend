@@ -1,36 +1,75 @@
-a.wrapper {
-  display: block;
+.wrapper {
+  /* display: flex;
+  justify-content: center; */
   width: 100%;
+
   color: black;
   font-weight: normal;
+  overflow: hidden;
 }
 
-a.wrapper:hover {
+.mySwiper.faculty {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow: hidden;
+  font-family: "PracticeRegular", serif !important;
+}
+
+.wrapper:hover {
   color: black;
 }
 
 .facultyCard {
-  background-color: #fff;
-  border-radius: 8%;
+  /* border-radius: 8%; */
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  overflow: hidden;
+}
+
+.col {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-attachment: fixed;
+  width: 88%;
+  margin: auto;
+}
+
+.facultyCard div {
+  /* width: 100%; */
+  /* border: 1px solid blue; */
+}
+
+.imgWrapper {
+  text-align: left;
+  overflow: hidden;
 }
 
 .facultyCard img {
-  width: 180px;
-  height: 180px;
+  width: 162px;
+  height: 162px;
   object-fit: contain;
-  border-radius: 100%;
-  /* border: 5px solid navy; */
+  transition: transform 0.3s ease-in;
+}
+
+.facultyCard:hover img {
+  transform: scale(1.2);
 }
 
 .profileDetail {
   margin-top: 1.5rem;
+  text-align: left;
+
+  width: 162px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
   text-align: center;
 }
 
@@ -40,7 +79,20 @@ a.wrapper:hover {
 }
 
 .profileDetail p {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+  font-size: 0.977em;
+  color: #002147;
+  font-weight: 100;
+  text-align: left;
+}
+
+.profileDetail .name {
   font-size: large;
-  word-break: break-all;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.emailBtn {
+  font-size: 16px;
+  font-weight: normal;
 }
