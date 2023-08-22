@@ -1,18 +1,17 @@
+import Courses from "../Courses/Courses";
 import "./ResearchCard.css";
 const ResearchCards = () => {
   return (
     // a main card component with two cards inside it
     <div className="research-cards-container">
       <div className="research-card-text-box">
-        <h2 className="research-card-text-heading">Research</h2>
+        <h2 className="research-card-text-heading">Programs & Courses</h2>
         <p className="research-card-text-paragraph">
-          Research is an important part of the CS department. Our faculty and
-          students are involved in projects that aim to bring engineering
-          solutions to a more efficient and sustainable world. Our research is a
-          collaborative effort between faculty, students, and industry partners.
+          Programs & Courses offered by the Department of Computer Science,
+          Abdul Wali Khan University Mardan
         </p>
       </div>
-      <div className="research-cards">
+      {/* <div className="research-cards">
         <div className="research-card">
           <img src="./images/Research/robot1.jpg" alt="" />
           <h5>Scientific Discovery</h5>
@@ -33,7 +32,8 @@ const ResearchCards = () => {
           </p>
           <button className="ResearchButton">More about CS Research</button>
         </div>
-      </div>
+      </div> */}
+      <Courses />
     </div>
   );
 };
