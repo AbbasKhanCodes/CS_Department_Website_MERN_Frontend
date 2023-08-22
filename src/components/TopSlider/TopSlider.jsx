@@ -23,10 +23,10 @@ function TopSlider() {
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
-          // autoplay={{
-          //   delay: 4800,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 4800,
+            disableOnInteraction: false,
+          }}
           effect={"fade"}
           loop={true}
           pagination={{
