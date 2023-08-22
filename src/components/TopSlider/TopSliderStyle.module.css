@@ -22,11 +22,11 @@
 .container {
   background-image: url("../images/topSlider/7.webp");
   background-size: contain;
-  background-position: 88%;
+  background-position: 97%;
   background-repeat: no-repeat;
   background-color: #c8d5d8;
   flex-grow: 1;
-  height: 500px;
+  height: 575px;
 }
 
 .container2 {
@@ -36,7 +36,7 @@
 .textDetail {
   padding: 7%;
   padding-top: 13%;
-  padding-left: 6%;
+  padding-left: 5%;
   padding-right: 50%;
   text-align: left;
 }
