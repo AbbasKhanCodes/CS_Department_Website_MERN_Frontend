@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Styles from "./EventBodyStyle.module.css";
 
-export default function EventBody() {
+export default function EventBody1() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

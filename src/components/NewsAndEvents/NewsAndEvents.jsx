@@ -116,7 +116,7 @@ function Events() {
                         </span>
                       </div>
                       <div className={`${Styles.media_body}`}>
-                        <Link to="/csawkum/event/1">{item.event}</Link>
+                        <Link to={item.link}>{item.event}</Link>
                       </div>
                     </li>
                   );

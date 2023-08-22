@@ -1,10 +1,17 @@
 import React from "react";
-import EventBody from "../components/EventBody/EventBody";
+
+import EventBody1 from "../components/EventBody/EventBody1";
+import EventBody2 from "../components/EventBody/EventBody2";
 
 export default function Event() {
+  const splitUrl = window.location.href.split("/");
+  const eventPageNo = splitUrl[splitUrl.length - 1];
+
   return (
     <>
-      <EventBody />
+      {eventPageNo == 1 && <EventBody1 />}
+
+      {eventPageNo == 2 && <EventBody2 />}
     </>
   );
 }
