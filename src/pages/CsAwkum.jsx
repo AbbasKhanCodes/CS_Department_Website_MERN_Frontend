@@ -23,7 +23,7 @@ function CsAwkum() {
   return (
     <>
       {/* Popup-admission */}
-      {popupOpen &&
+      {!popupOpen &&
         createPortal(<Popup onClose={handleCloseBtn} />, document.body)}
 
       {/* Header */}

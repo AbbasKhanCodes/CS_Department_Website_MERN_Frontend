@@ -1,5 +1,11 @@
 import Styles from "./FacultyStyle.module.css";
+
 import Card from "./Card";
+import { faculty } from "./FacultyStaff";
+
+// Import capitilize words
+import { capitalizeFirstLetter } from "../../utilities/utilities";
+
 import { motion } from "framer-motion";
 
 // Animation
@@ -33,6 +39,10 @@ if (!isMobile) {
 //you need to refresh the page, it doesn't work when you resize it!
 
 const Faculty = () => {
+  faculty.map((person) => {
+    console.log("Faculty Name " + person.name.fullName);
+  });
+
   return (
     <>
       <motion.div
@@ -57,7 +67,23 @@ const Faculty = () => {
               debate.
             </p>
           </div>
-          <Card />
+        </div>
+
+        <div className={Styles.faculty_component}>
+          <div className={Styles.faculty_tree}>
+            {faculty.map((person) => (
+              <div key={person.name.fullName} className={Styles.faculty_person}>
+                <img
+                  src={"../images/faculty/" + person.imageSrc}
+                  alt="Faculty Staff"
+                />
+                <div className={Styles.faculty_person_text_box}>
+                  <h2>{capitalizeFirstLetter(person.name.fullName)}</h2>
+                  <img src="./icons/Arrow 8.svg" alt="arrow forward" />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </motion.div>
     </>

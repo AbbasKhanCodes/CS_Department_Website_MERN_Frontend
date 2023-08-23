@@ -1,16 +1,23 @@
 .wrapper {
   margin: 50px 0;
+
+  background-color: #fff;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  padding-bottom: 30px;
 }
 .container {
   /* margin: auto 13%; */
   /* padding: 50px 4rem; */
   padding: 30px 15%;
-  background-color: #fff;
+
   color: #002147;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
 
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+
+  padding-bottom: 0;
 }
 
 .facultyHeading {
@@ -23,5 +30,161 @@
 @media screen and (max-width: 786px) {
   .container {
     padding: 50px 1.5rem;
+
+    padding-bottom: 0;
+  }
+}
+
+/* ########################### New Style ############################# */
+
+.faculty_component {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 50px;
+  color: var(--text-color-secondary);
+  margin: 10px auto;
+  max-width: 1160px;
+  text-align: left;
+
+  margin-top: 0;
+  padding-bottom: 50px;
+}
+
+.button {
+  padding: 16px 32px;
+  border: 2px solid var(--button-color);
+  color: var(--button-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.button:hover {
+  background-color: var(--button-color);
+  color: var(--bg-color-primary);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.faculty_tree {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: linear-gradient(
+    to right,
+    var(--bg-color-primary),
+    var(--bg-color-secondary),
+    var(--bg-color-primary)
+  );
+  justify-items: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.faculty_person {
+  padding: 25px;
+  background: rgba(160, 172, 163, 0.2);
+  box-shadow: 6px 4px 4px -2px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+  max-width: fit-content;
+  margin: 10px 10px;
+
+  text-align: center;
+}
+
+.faculty_person:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.faculty_person > img {
+  /* height: 100%; */
+  height: 250px;
+  margin: auto;
+  width: auto;
+  border-radius: 8px;
+}
+.faculty_person_text_box {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 2px;
+}
+.faculty_person_text_box > h2 {
+  margin: 10px 0px;
+  font-size: 21px;
+}
+@media screen and (min-width: 768px) {
+  .faculty_component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .faculty_tree {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background: transparent;
+    gap: 8px;
+  }
+  .faculty_person {
+    padding: 10px;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .faculty_tree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    background: linear-gradient(
+      to right,
+      var(--bg-color-primary),
+      var(--bg-color-secondary),
+      var(--bg-color-tertiary)
+    );
+    justify-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+  .faculty_person {
+    padding: 10px;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .faculty_component {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .faculty_tree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+  .faculty_person {
+    padding: 8px;
+    margin: 8px;
+    width: 100%;
   }
 }

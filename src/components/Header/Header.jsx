@@ -2,10 +2,11 @@ import "./header.css";
 const Header = () => {
   return (
     <div className="Header-Main">
-      {/* <div className="Header-Main-Top">
-        <p>Abdul Wali Khan University</p>
+      <div className="Header-Main-Top">
+        <p>Abdul Wali Khan University Mardan, Pakistan</p>
       </div>
-      <div className="Header-Main-Middle">
+
+      {/* <div className="Header-Main-Middle">
         <p>
           <span>
             <img
@@ -18,7 +19,7 @@ const Header = () => {
           </span>{" "}
           Welcome to the new computer science website
         </p>
-      </div> */}
+      </div>  */}
       <div className="Header-Main-Bottom">
         <span className="header-heading">AWKUM |</span> Computer Science
         Department
