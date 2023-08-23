@@ -18,10 +18,7 @@ const Courses = () => {
           boundaries, unravel complexity, and shape the future by infusing
           technology with unprecedented levels of intellect and insight.
         </p>
-        <a
-          href="https://awkum.edu.pk/faculties-colleges/faculty-of-physical-numerical-sciences/cs-garden/programs/"
-          target="_blank"
-        >
+        <a href="./pdf/CurriculumBCS(AI).pdf" target="_blank">
           <button className={Styles.button}>View Semester Details</button>
         </a>
       </div>
@@ -42,10 +39,7 @@ const Courses = () => {
           elegant solutions, bridging imagination and technology to forge the
           digital landscapes of tomorrow.
         </p>
-        <a
-          href="https://awkum.edu.pk/faculties-colleges/faculty-of-physical-numerical-sciences/cs-garden/programs/"
-          target="_blank"
-        >
+        <a href="./pdf/CurriculumBCS(Software).pdf" target="_blank">
           <button className={Styles.button}>View Semester Details</button>
         </a>
       </div>
@@ -72,10 +66,7 @@ const Courses = () => {
           path that not only embraces the exciting advancements of today but
           also shapes the technological landscape of tomorrow.
         </p>
-        <a
-          href="https://awkum.edu.pk/faculties-colleges/faculty-of-physical-numerical-sciences/cs-garden/programs/"
-          target="_blank"
-        >
+        <a href="./pdf/CurriculumBCS.pdf" target="_blank">
           <button className={Styles.button}>View Semester Details</button>
         </a>
       </div>
@@ -102,10 +93,7 @@ const Courses = () => {
           defenders who will play a pivotal role in upholding the integrity of
           the digital landscape.
         </p>
-        <a
-          href="https://awkum.edu.pk/faculties-colleges/faculty-of-physical-numerical-sciences/cs-garden/programs/"
-          target="_blank"
-        >
+        <a href="./pdf/CyberSecurityCurriculum.pdf" target="_blank">
           <button className={Styles.button}>View Semester Details</button>
         </a>
       </div>
