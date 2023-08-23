@@ -7,6 +7,7 @@ import Faculty from "../components/Faculty/Faculty";
 import Projects from "../components/Projects/Projects";
 import Programs from "../components/Programs/Programs";
 import ProgramsMsPhd from "../components/Programs/ProgramsMsPhd";
+import StudentResource from "../components/StudentResources/StudentResource";
 import Footer from "../components/Footer/Footer";
 import Popup from "../components/Popup/Popup";
 import Header from "../components/Header/Header";
@@ -36,7 +37,7 @@ function CsAwkum() {
       {/* <WelcomeHeading /> */}
 
       <ResearchCards />
-      <Quotation />
+      {/* <Quotation /> */}
 
       {/* News & Events */}
       <Events />
@@ -44,17 +45,19 @@ function CsAwkum() {
       {/* Chairman Message */}
       {/* <ChairmanMessage /> */}
 
+      <StudentResource />
+
       {/* Faculty */}
       <Faculty />
 
       {/* Projects */}
-      <Projects />
+      {/* <Projects /> */}
 
       {/* Program and Majors */}
-      <Programs />
+      {/* <Programs /> */}
 
       {/* Programs MS & Phd */}
-      <ProgramsMsPhd />
+      {/* <ProgramsMsPhd /> */}
 
       {/* Footer */}
       <Footer />

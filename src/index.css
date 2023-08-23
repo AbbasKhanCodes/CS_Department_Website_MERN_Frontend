@@ -273,7 +273,7 @@ h6,
   padding-top: 9rem;
   background: url("../images/footer/bg-circle.png"),
     url("../images/footer/bg-triangle.png"), url("../images/footer/bg-top.png"),
-    linear-gradient(to bottom right, #b1770e, #957b1c);
+    linear-gradient(to bottom right, blue, dodgerblue);
   background-position: left 0px bottom 0px, right 0px top 50%, center top;
   background-repeat: no-repeat;
 }

@@ -23,7 +23,7 @@ const Courses = () => {
         </a>
       </div>
       <div className={Styles.course}>
-        <img src="./images/Research/robot2.jpg" alt="" height={80} width={80} />
+        <img src="./background/coding-man.jpg" alt="" height={80} width={80} />
         <h3>Software Engineering</h3>
         <p>
           In our university programs, the realm of Software Engineering unfolds
