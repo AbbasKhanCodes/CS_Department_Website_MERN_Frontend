@@ -30,7 +30,7 @@ function CsAwkum() {
       <Header />
 
       {/* Top Slider */}
-      <TopSlider />
+      {/* <TopSlider /> */}
 
       {/* Welcome Heading */}
       {/* <WelcomeHeading /> */}
