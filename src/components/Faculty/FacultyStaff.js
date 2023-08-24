@@ -75,39 +75,66 @@ export const faculty = [
     email: "amirakbar@awkum.edu.pk",
   },
 ];
-// {
-//   imageSrc: "SHAHZADKHAN.jpg",
-//   name: { title: "Mr.", fullName: "SHAHZAD KHAN" },
-//   designation: "Lecturer",
-//   education: "",
-//   email: "shahzad@awkum.edu.pk",
-// },
 
-// {
-//   imageSrc: "ROOHULLAHJANSYED.jpg",
-//   name: { title: "Dr.", fullName: "ROOHULLAH JAN SYED" },
-//   designation: "Lecturer",
-//   education: "Ph.D.",
-//   email: "roohullahsyed@awkum.edu.pk",
-// },
-// {
-//   imageSrc: "MIANAHMADJAN.jpg",
-//   name: { title: "Dr.", fullName: "MIAN AHMAD JAN" },
-//   designation: "Assistant Professor",
-//   education: "Ph.D.",
-//   email: "mianjan@awkum.edu.pk",
-// },
-// {
-//   imageSrc: "SHERAFZALKHAN.jpg",
-//   name: { title: "Dr.", fullName: "SHER AFZAL KHAN" },
-//   designation: "Professor",
-//   education: "Ph.D.",
-//   email: "sher.afzal@awkum.edu.pk",
-// },
-// {
-//   imageSrc: "MUHAMMADTAHIR.jpg",
-//   name: { title: "Dr.", fullName: "MUHAMMAD TAHIR" },
-//   designation: "Assistant Professor",
-//   education: "Ph.D.",
-//   email: "muhammadtahir@awkum.edu.pk",
-// },
+export const facultyWithoutRole = [
+  {
+    imageSrc: "SHERAFZALKHAN.jpg",
+    name: { title: "Dr.", fullName: "SHER AFZAL KHAN" },
+    designation: "Professor",
+    education: "Ph.D.",
+    email: "sher.afzal@awkum.edu.pk",
+  },
+
+  {
+    imageSrc: "MIANAHMADJAN.jpg",
+    name: { title: "Dr.", fullName: "MIAN AHMAD JAN" },
+    designation: "Assistant Professor",
+    education: "Ph.D.",
+    email: "mianjan@awkum.edu.pk",
+  },
+
+  {
+    imageSrc: "MUHAMMADTAHIR.jpg",
+    name: { title: "Dr.", fullName: "MUHAMMAD TAHIR" },
+    designation: "Assistant Professor",
+    education: "Ph.D.",
+    email: "muhammadtahir@awkum.edu.pk",
+  },
+  {
+    imageSrc: "MushtaqRaza.jpg",
+    name: { title: "Dr.", fullName: "Mushtaq Raza" },
+    designation: "Assistant Professor",
+    education: "Ph.D.",
+    email: "uomian49@gmail.com",
+  },
+  {
+    imageSrc: "IZAZURREHMAN.jpg",
+    name: "Dr. IZAZ UR REHMAN",
+    name: { title: "Dr.", fullName: "IZAZ UR REHMAN" },
+    designation: "Assistant Professor",
+    education: "Ph.D.",
+    email: "izaz@awkum.edu.pk",
+  },
+  {
+    imageSrc: "ROOHULLAHJANSYED.jpg",
+    name: { title: "Dr.", fullName: "ROOHULLAH JAN" },
+    designation: "Lecturer",
+    education: "Ph.D.",
+    email: "roohullahsyed@awkum.edu.pk",
+  },
+  {
+    imageSrc: "AshrafZia.jpg",
+    name: { title: "Dr.", fullName: "Ashraf Zia" },
+    designation: "Assistant Professor",
+    education: "Ph.D.",
+    email: "ashrafzia@awkum.edu.pk",
+  },
+
+  {
+    imageSrc: "SHAHZADKHAN.jpg",
+    name: { title: "Mr.", fullName: "SHAHZAD KHAN" },
+    designation: "Lecturer",
+    education: "",
+    email: "shahzad@awkum.edu.pk",
+  },
+];

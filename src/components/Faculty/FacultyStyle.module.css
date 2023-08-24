@@ -37,17 +37,24 @@
 
 /* ########################### New Style ############################# */
 
+.wrapperFacultySlider {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .faculty_component {
   display: flex;
   flex-direction: column;
   padding: 5px 50px;
   color: var(--text-color-secondary);
   margin: 10px auto;
-  max-width: 1160px;
+  max-width: 1350px;
   text-align: left;
 
   margin-top: 0;
   padding-bottom: 50px;
+
+  background-color: #fff;
 }
 
 .button {
@@ -110,6 +117,10 @@
   .faculty_person > img {
     width: 218px;
   }
+  .wrapperFacultySlider {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 .faculty_person_text_box {
@@ -131,7 +142,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 4.5rem;
   }
   .faculty_tree {
     display: grid;
@@ -174,6 +185,7 @@
     font-size: 1rem;
   }
 }
+
 @media screen and (max-width: 480px) {
   .faculty_component {
     display: flex;
