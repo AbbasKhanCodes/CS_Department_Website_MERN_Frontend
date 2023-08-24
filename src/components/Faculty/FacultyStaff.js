@@ -53,7 +53,8 @@ export const faculty = [
     academicTitle: "Lecturer",
     role: "NECAC Coordinator",
     education: "Ph.D.",
-    email: "aftab.ahmed.khan@awkum.edu.pk",
+    // email: "aftab.ahmed.khan@awkum.edu.pk",
+    email: "aftab.ahmed@awkum.edu.pk",
   },
   {
     imageSrc: "salman.jpg",

@@ -105,15 +105,22 @@
   width: auto;
   border-radius: 8px;
 }
+
+@media (max-width: 468px) {
+  .faculty_person > img {
+    width: 218px;
+  }
+}
+
 .faculty_person_text_box {
   display: flex;
   justify-content: space-between;
 }
-.faculty_person_text_box  h2 {
+.faculty_person_text_box h2 {
   font-size: 21px;
   text-align: left;
 }
-.faculty_person_text_box p{
+.faculty_person_text_box p {
   text-align: left;
   margin-top: -10px;
 }
