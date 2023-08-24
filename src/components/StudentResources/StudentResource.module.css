@@ -1,7 +1,7 @@
 .student_resources_component {
   color: var(--text-color-secondary);
   text-align: center;
-  margin: 10px auto;
+  margin: 80px auto;
   max-width: 1160px;
 }
 .student_resources {

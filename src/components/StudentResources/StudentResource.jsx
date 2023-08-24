@@ -2,6 +2,15 @@ import Styles from "./StudentResource.module.css";
 const StudentResource = () => {
   return (
     <div className={Styles.student_resources_component}>
+      <hr
+        style={{
+          background: "#333",
+          color: "#333",
+          borderColor: "#333",
+          height: "3px",
+          opacity: 0.2,
+        }}
+      />
       <h1>Student Resources</h1>
       <div className={Styles.student_resources}>
         <a href="https://lms.awkum.edu.pk/" target="_blank">
@@ -63,15 +72,15 @@ const StudentResource = () => {
             <h2>Youtube Channel</h2>
           </div>
         </a>
-        <a href="https://lms.awkum.edu.pk/" target="_blank">
+        <a href="https://fyps.aamirakbar.com/faqs" target="_blank">
           <div className={Styles.student_resource}>
             <img
-              src="./icons/icons8-facebook-50.png"
+              src="./icons/icons8-faq-64.png"
               alt=""
               height={64}
               width={64}
             />
-            <h2>Facebook Channel</h2>
+            <h2>FAQs</h2>
           </div>
         </a>
       </div>

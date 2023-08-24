@@ -57,6 +57,9 @@ function App() {
                 {/* Event Page */}
                 <Route path="/csawkum/event/3" element={<Event />} />
 
+                {/* Event Page */}
+                <Route path="/csawkum/event/4" element={<Event />} />
+
                 {/* Not Found  */}
                 <Route path="/*" element={<NotFound />} />
               </Routes>

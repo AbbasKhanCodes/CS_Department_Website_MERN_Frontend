@@ -31,7 +31,7 @@ function ChairmanMessage() {
         <div>
           <h4 className={`${Styles.chairmanName}`}> DR. NADEEM IQBAL</h4>
           <p>
-            Associate Professor <br />
+            Head of the Computer Science Department <br />
             Abdul Wali Khan University Mardan
           </p>
         </div>

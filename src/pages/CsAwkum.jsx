@@ -14,6 +14,9 @@ import Header from "../components/Header/Header";
 
 import ResearchCards from "../components/ResearchCards/ResearchCard";
 import Quotation from "../components/Quotation/Quotation";
+import StudentStories from "../components/StudentStories/StudentStories";
+import Graduation from "../components/Graduation/Graduation";
+import SlidingFaculty from "../components/SlidingFaculty/SlidingFaculty";
 
 function CsAwkum() {
   const [popupOpen, setPopupOpen] = useState(true);
@@ -44,11 +47,13 @@ function CsAwkum() {
 
       {/* Chairman Message */}
       {/* <ChairmanMessage /> */}
-
+      <StudentStories />
       <StudentResource />
 
       {/* Faculty */}
       <Faculty />
+
+      <Graduation />
 
       {/* Projects */}
       {/* <Projects /> */}
@@ -60,6 +65,7 @@ function CsAwkum() {
       {/* <ProgramsMsPhd /> */}
 
       {/* Footer */}
+      <img src="/Line 1.png" width={"100%"} />
       <Footer />
     </>
   );

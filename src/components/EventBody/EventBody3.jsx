@@ -9,7 +9,8 @@ export default function EventBody3() {
     <>
       <div className={`${Styles.container}`}>
         <h1 className={`${Styles.titleHeading}`}>
-          DLSEI Program Launch and Focal Person Selection
+          Nurturing Innovation: AWKUM's Inspiring Student Shines at PMNIA
+          Ceremony
         </h1>
 
         <div className={`${Styles.detail}`}>
@@ -19,25 +20,27 @@ export default function EventBody3() {
           </h5>
 
           <h5>
-            <span className={`${Styles.fontNormal}`}>Venue: </span> Computer
-            Science Department
+            <span className={`${Styles.fontNormal}`}>Venue: </span>
+            Prime Minister's House
           </h5>
         </div>
 
         <div>
           <p>
-            Computer Science Department celebrated the launch of the Digital
-            Learning & Skills Enrichment Initiative (DLSEI). In collaboration
-            with Coursera, this initiative, led by the Higher Education
-            Commission (HEC) of Pakistan, aims to provide students with valuable
-            digital skills and learning opportunities. One of the program's
-            remarkable features is that it allows students to enroll in Coursera
-            courses completely free of cost. During the event, an HEC
-            representative introduced the DLSEI program and announced the
-            selection of focal persons who will guide and support students in
-            their DLSEI journey. This event heralds an exciting prospect for
-            students to embrace digital education and skill development
-            effectively.
+            Abdul Wali Khan University Mardan (AWKUM) shines through students
+            like Saad, a BCS (AI) scholar, whose journey led to the prestigious
+            Prime Minister's National Innovation Award ceremony at the Prime
+            Minister's House. Competing among 256 peers at NUST, Saad's
+            innovative ideas emerged triumphant after rigorous selection.
+            Benefiting from comprehensive training at IMSciences Peshawar, he
+            confidently presented his startup idea, epitomizing AWKUM's
+            nurturing environment. The university's collaborations with
+            institutions like NUST and IMSciences, along with its alignment with
+            government initiatives, amplify its commitment to fostering a
+            culture of innovation. Saad's accomplishment underscores how AWKUM
+            empowers students to transform visionary ideas into tangible
+            achievements, a true testament to their support for students'
+            aspirations.
           </p>
         </div>
 

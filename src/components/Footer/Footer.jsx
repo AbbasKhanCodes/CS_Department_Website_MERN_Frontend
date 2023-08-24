@@ -46,6 +46,9 @@ const Footer = () => {
         {/* Footer Start */}
         <div className="container-fluid bg-primary text-light footer wow fadeIn">
           <div className="container py-5 px-lg-5">
+            <h3 style={{ color: "chocolate", marginBottom: "36px" }}>
+              AWKUM | Computer Science
+            </h3>
             <div className="row g-5">
               <div className="col-md-6 col-lg-3 contactInfo">
                 <h4 className="text-white mb-4">Contact info</h4>
