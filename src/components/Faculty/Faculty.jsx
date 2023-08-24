@@ -7,42 +7,22 @@ import { faculty } from "./FacultyStaff";
 import { capitalizeFirstLetter } from "../../utilities/utilities";
 
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 // Animation
-let animate = {};
-const isMobile = window.innerWidth < 768; //Add the width you want to check for here (now 768px)
-if (!isMobile) {
-  animate = {
-    offscreen: { opacity: 0 },
-    onscreen: {
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 3,
-      },
+let animate = {
+  offscreen: { opacity: 0 },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 3,
     },
-  };
-} else {
-  animate = {
-    offscreen: { opacity: 0 },
-    onscreen: {
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 3,
-      },
-    },
-  };
-} //if the width >= 768px, boxVariants will be empty, resulting in no animation
-//you need to refresh the page, it doesn't work when you resize it!
+  },
+};
 
 const Faculty = () => {
-  faculty.map((person) => {
-    console.log("Faculty Name " + person.name.fullName);
-  });
-
   return (
     <>
       <motion.div
@@ -50,12 +30,12 @@ const Faculty = () => {
         initial={"offscreen"}
         whileInView={"onscreen"}
         variants={animate}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         <div className={`${Styles.container}`}>
           {/* Faculty Heading */}
           <div className={`${Styles.row}`}>
-            <h2 className={`${Styles.facultyHeading} `}>Meet the faculty</h2>
+            <h2 className={`${Styles.facultyHeading} `}>Meet the Faculty</h2>
           </div>
 
           {/* Paragraph text */}
@@ -78,8 +58,17 @@ const Faculty = () => {
                   alt="Faculty Staff"
                 />
                 <div className={Styles.faculty_person_text_box}>
-                  <h2>{capitalizeFirstLetter(person.name.fullName)}</h2>
-                  <img src="./icons/Arrow 8.svg" alt="arrow forward" />
+                  <div>
+                    <h2>
+                      {person.name.title}
+                      {capitalizeFirstLetter(person.name.fullName)}
+                    </h2>
+                    <p>{person.academicTitle}</p>
+                    <p>{person.role}</p>
+                    <p>{person.email}</p>
+                  </div>
+
+                  {/* <img src="./icons/Arrow 8.svg" alt="arrow forward" /> */}
                 </div>
               </div>
             ))}

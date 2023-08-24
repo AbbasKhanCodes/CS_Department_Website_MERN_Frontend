@@ -33,14 +33,7 @@
 .container2 {
   background-image: url("../images/topSlider/9.jpg");
 }
-.container3{
-  background-image: url("../images/topSlider/10.jpeg");
-  object-fit: contain;
-}
-.container4{
-  background-image: url("../images/topSlider/11.jpeg");
-  object-fit: contain;
-}
+
 .textDetail {
   padding: 7%;
   padding-top: 13%;
@@ -48,10 +41,7 @@
   padding-right: 50%;
   text-align: left;
 }
-.textDetailLast{
-  background-color: #61b08a;
-  color: #f1f1f1;
-}
+
 .textDetail h1 {
   line-height: 1.1;
 }

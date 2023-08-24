@@ -45,12 +45,38 @@ function TopSlider() {
               </div>
             </div>
           </SwiperSlide>
-
           <SwiperSlide>
             <div className={`${Styles.container} ${Styles.container2}`}>
               <div className={`${Styles.textDetail}`}>
                 <h1>CERTIFICATE DISTRIBUTION</h1>
                 <h2>AT WORKSHOP</h2>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div
+              className={`${Styles.container} ${Styles.container3} ${Styles.textDetailLast}`}
+            >
+              <div className={`${Styles.textDetail}`}>
+                <h1>
+                  Prime Minister <br /> National Innovation <br /> Award 2023
+                </h1>
+                <h5>Largest Idea Pitching Competition</h5>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={`${Styles.container} ${Styles.container4}`}>
+              <div className={`${Styles.textDetail}`}>
+                <h1>
+                  Aritificial Intelligence
+                  <br /> & Job Marketing Ethics
+                </h1>
+                <h5>
+                  Organized by: Enterpreneurship Society in collaboration with
+                  <br />
+                  District Youth office, Mardan
+                </h5>
               </div>
             </div>
           </SwiperSlide>
