@@ -48,8 +48,8 @@ function TopSlider() {
           <SwiperSlide>
             <div className={`${Styles.container} ${Styles.container2}`}>
               <div className={`${Styles.textDetail}`}>
-                <h1>CERTIFICATE DISTRIBUTION</h1>
-                <h2>AT WORKSHOP</h2>
+                <h1>Digital Learning</h1>
+                <h2>HEC Coursera</h2>
               </div>
             </div>
           </SwiperSlide>
